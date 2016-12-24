@@ -6,8 +6,43 @@
     <description>Recent content on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 24 Dec 2016 12:50:52 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 24 Dec 2016 14:49:14 +0100</lastBuildDate>
     <atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mentions Légales</title>
+      <link>https://lumao.eu/post/mentions-legales/</link>
+      <pubDate>Sat, 24 Dec 2016 14:49:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/mentions-legales/</guid>
+      <description>
+
+&lt;p&gt;Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l’économie numérique, il est précisé aux utilisateurs du site lumao.eu l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi.&lt;/p&gt;
+
+&lt;h3 id=&#34;edition-du-site&#34;&gt;Edition du site&lt;/h3&gt;
+
+&lt;p&gt;Le site lumao.eu est édité par la société NODALYS S.A.S, au capital social de 45.000 euros, immatriculée au Registre du Commerce et des Sociétés d’Aix-en-Provence sous le n° 483 180 808 00030 et dont le siège social est situé à L’Escapade, Bât. E Avenue Paul Jullien 13100 Le Tholonet (TVA intracommunautaire n° FR44 483 180 808).&lt;/p&gt;
+
+&lt;h3 id=&#34;responsable-de-publication&#34;&gt;Responsable de publication&lt;/h3&gt;
+
+&lt;p&gt;Monsieur Lavorel Aurélien&lt;/p&gt;
+
+&lt;h3 id=&#34;hébergeur&#34;&gt;Hébergeur&lt;/h3&gt;
+
+&lt;p&gt;Le site lumao.eu est hébergé par la société OVH, 2 rue Kellermann – 59100 Roubaix. Le stockage des données personnelles des utilisateurs est assuré par la société OVH, 2 rue Kellermann – 59100 Roubaix qui adhère au «Safe Harbor» en conformité avec les exigences françaises de la Commission Nationale de l’Informatique et des Libertés (CNIL) en matière de transfert de données vers des entreprises établies aux Etats-Unis.&lt;/p&gt;
+
+&lt;h3 id=&#34;nous-contacter&#34;&gt;Nous contacter&lt;/h3&gt;
+
+&lt;p&gt;Par téléphone : 06 47 41 03 49
+Par email : aurelien@lavoweb.net&lt;/p&gt;
+
+&lt;h3 id=&#34;cnil&#34;&gt;CNIL&lt;/h3&gt;
+
+&lt;p&gt;La collecte et le traitement informatique des données nominatives par la Société a fait l’objet d’une déclaration simplifiée auprès de l’autorité française de protection des données personnelles (la Commission Nationale de l’Informatique et des Libertés – CNIL) (numéro n° 1842022).&lt;/p&gt;
+
+&lt;p&gt;Vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant au Responsable CNIL de la Société à l’adresse postale (ou électronique) suivante : 635, route du Noiret 74350 Cruseilles (aurelien@lavoweb.net). Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ATEC Sports</title>
@@ -132,15 +167,6 @@
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/20-prairymood/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R-Cade</title>
-      <link>https://lumao.eu/reference/03-rcade/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/reference/03-rcade/</guid>
       <description></description>
     </item>
     
