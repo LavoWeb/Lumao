@@ -6,8 +6,121 @@
     <description>Recent content in Posts on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 24 Dec 2016 14:49:14 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 24 Dec 2016 18:49:14 +0100</lastBuildDate>
     <atom:link href="https://lumao.eu/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo, GitHub Pages et Travis CI</title>
+      <link>https://lumao.eu/post/hugo-github-page/</link>
+      <pubDate>Sat, 24 Dec 2016 18:49:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/hugo-github-page/</guid>
+      <description>
+
+&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Introduction&lt;/h2&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; est un générateur de site statique, il est rapide, comptatible toute plateforme et est très simple à prendre en main.
+Il est fournit avec un serveur intégré et l&amp;rsquo;extension live-reload, vous pouvez donc écrire un article en MarkDown et voir directement le résultat sans rafrachir la page.&lt;/p&gt;
+
+&lt;p&gt;Faire des sites statiques permets de réduire les coûts d&amp;rsquo;hébergements et d&amp;rsquo;enlever le risque de failles applicatives.&lt;/p&gt;
+
+&lt;h3 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h3&gt;
+
+&lt;p&gt;GitHub permets d&amp;rsquo;héberger gratuitement (en cas pas projet open-source) des documentations ou encore un site web.&lt;/p&gt;
+
+&lt;p&gt;On peut même avoir un nom de domaine personnalisé, il suffit de faire un fichier CNAME à la racine du projet et de mettre votre nom de domaine dedans.&lt;/p&gt;
+
+&lt;p&gt;Ensuite, il suffit de configurer votre nom de domaine avec ces ips :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;192.30.252.153&lt;/p&gt;
+
+&lt;p&gt;192.30.252.154&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;travis-ci&#34;&gt;Travis CI&lt;/h3&gt;
+
+&lt;p&gt;Travis CI est un outils d&amp;rsquo;intégration continue, il est également gratuit pour les projets open-source et est intégrable en un clic avec Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Intérêt&lt;/h2&gt;
+Avoir un site web versionné, avec gestion de workflow et multi-utilisateur. On a les mêmes fonctionnalités que sous WordPress avec quelques plugins sauf que c&amp;rsquo;est rapide sans avoir à faire du développement poussé ou installer un module de cache.&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est le top pour un blog, on peut même gérer les commentaires avec Disqus.&lt;/p&gt;
+
+&lt;p&gt;Pour écrire un nouvel article, il suffit de forker un projet sur GitHub, créer une branche et de créer le fichier .md correspondant. Un des administrateur du porjet pourra faire ses commentaires directement sur la merge request.&lt;/p&gt;
+
+&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Déploiement automatique&lt;/h2&gt;
+GitHub Pages gére uniquement les fichiers en html, Hugo génére les fichiers HTML dans un dossier &amp;ldquo;public&amp;rdquo;, il faut donc avoir 2 repos git pour le projet, un qui contient Hugo et l&amp;rsquo;autre qui a uniquement le code HTML. Nous allons voir comment faire une synchronisation automatique.&lt;/p&gt;
+
+&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Principe&lt;/h2&gt;
+A chaque push sur la branche master de notre repo Hugo, on push le répertoire public sur la branch contenant le code HTML.&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est ici qu&amp;rsquo;intervient &lt;em&gt;Travis CI&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Étapes&lt;/h2&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-1-lier-le-compte-travis-ci-à-github&#34;&gt;Étape #1 : Lier le compte Travis CI à GitHub&lt;/h3&gt;
+
+&lt;p&gt;Pour cela il suffit de s&amp;rsquo;enregistrer, aller sur la page &lt;em&gt;Accounts&lt;/em&gt;, choisir le bon compte (entre le compte personnel et le compte entreprise) et de cliquer sur le repo Hugo. Ex:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/ajouter-repo-travis-ci.png&#34; alt=&#34;Ajouter un repo GitHub dans Travis CI&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-2-créer-un-token-github&#34;&gt;Étape #2 : Créer un Token GitHub&lt;/h3&gt;
+
+&lt;p&gt;Pour faire un push automatique. Il faut aller &lt;a href=&#34;https://github.com/settings/tokens/new&#34;&gt;ici&lt;/a&gt;, taper votre mot-de-passe puis donner le droit &amp;ldquo;repo&amp;rdquo; :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/creer-token-github.png&#34; alt=&#34;Créer un token GitHub pour push automatique&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il faut ensuite copier le token, vous ne pourrez le voir qu&amp;rsquo;une seule fois.&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-3-configurer-travis-ci&#34;&gt;Étape #3 : Configurer Travis CI&lt;/h3&gt;
+
+&lt;p&gt;Il faut maintenant renseigner quelques variables d&amp;rsquo;environnement au build Travis CI. Il faut d&amp;rsquo;abord être sur le bon repo puis cliquer sur le lien settings :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/travis-ci-lien-options.png&#34; alt=&#34;Travis CI lien vers les options&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Voici les variables à renseigner :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;GH_TOKEN&lt;/em&gt; Token de l&amp;rsquo;étape #2, il permets de faire un push sans demande de mot de passe. Il faut bien penser à cacher l&amp;rsquo;affichage de cette variable en laissant l&amp;rsquo;option à &lt;em&gt;OFF&lt;/em&gt; pour que n&amp;rsquo;importe qui ne puisse pas commit dans vos repos ;)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;GH_REPO&lt;/em&gt; Repositery git du code HTML (avec le .git à la fin).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;REPO&lt;/em&gt; Nom du repo, ce qu&amp;rsquo;il y a entre le dernier / et le .git (Lumao dans mon cas)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/variable-environnement-travis-ci.png&#34; alt=&#34;Travis CI configurer variables d&#39;environnements&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-4-script-de-déploiement-automatique&#34;&gt;Étape #4 : Script de déploiement automatique&lt;/h3&gt;
+
+&lt;p&gt;Il est disponible ici : &lt;a href=&#34;https://github.com/LavoWeb/Lumao-Hugo/blob/master/deploy.sh&#34;&gt;https://github.com/LavoWeb/Lumao-Hugo/blob/master/deploy.sh&lt;/a&gt;, c&amp;rsquo;est un mix de celui de plusieurs sites, dont la doc officielle, à une différence près : il fonctionne.&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-5-fichier-de-build&#34;&gt;Étape #5 : Fichier de build&lt;/h3&gt;
+
+&lt;p&gt;Si vous avez bien suivi, il ne nous manque plus que le fichier de build &lt;em&gt;.travis.yml&lt;/em&gt;, voici celui que j&amp;rsquo;utilise :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;language: go
+install: go get github.com/spf13/hugo
+script:
+  - hugo
+  - bash ./deploy.sh
+notifications:
+    email:
+        on_failure: always
+branches:
+  only:
+  - master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On installe Hugo, on le lance (il faut bien penser à avoir déclaré son thème dans le fichier de config &lt;em&gt;config.toml&lt;/em&gt;) puis on lance le script fait plus haut.&lt;/p&gt;
+
+&lt;p&gt;En cas de problème, un mail est envoyé.&lt;/p&gt;
+
+&lt;p&gt;Et finalement on ne fait le déploiement que sur la branch master pour ne pas publier quelque chose qui serait sur la dev.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Mentions Légales</title>
