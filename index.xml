@@ -21,8 +21,8 @@
 
 &lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; est un générateur de site statique, il est rapide, comptatible toute plateforme et est très simple à prendre en main.
-Il est fournit avec un serveur intégré et l&amp;rsquo;extension live-reload, vous pouvez donc écrire un article en MarkDown et voir directement le résultat sans rafrachir la page.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; est un générateur de site statique, il est rapide, compatible toute plateforme et est très simple à prendre en main.
+Il est fourni avec un serveur intégré et l&amp;rsquo;extension live-reload, vous pouvez donc écrire un article en MarkDown et voir directement le résultat sans rafraîchir la page.&lt;/p&gt;
 
 &lt;p&gt;Faire des sites statiques permets de réduire les coûts d&amp;rsquo;hébergements et d&amp;rsquo;enlever le risque de failles applicatives.&lt;/p&gt;
 
@@ -42,17 +42,17 @@ Il est fournit avec un serveur intégré et l&amp;rsquo;extension live-reload, v
 
 &lt;h3 id=&#34;travis-ci&#34;&gt;Travis CI&lt;/h3&gt;
 
-&lt;p&gt;Travis CI est un outils d&amp;rsquo;intégration continue, il est également gratuit pour les projets open-source et est intégrable en un clic avec Github.&lt;/p&gt;
+&lt;p&gt;Travis CI est un outil d&amp;rsquo;intégration continue, il est également gratuit pour les projets open-source et est intégrable en un clic avec Github.&lt;/p&gt;
 
 &lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Intérêt&lt;/h2&gt;
 Avoir un site web versionné, avec gestion de workflow et multi-utilisateur. On a les mêmes fonctionnalités que sous WordPress avec quelques plugins sauf que c&amp;rsquo;est rapide sans avoir à faire du développement poussé ou installer un module de cache.&lt;/p&gt;
 
 &lt;p&gt;C&amp;rsquo;est le top pour un blog, on peut même gérer les commentaires avec Disqus.&lt;/p&gt;
 
-&lt;p&gt;Pour écrire un nouvel article, il suffit de forker un projet sur GitHub, créer une branche et de créer le fichier .md correspondant. Un des administrateur du porjet pourra faire ses commentaires directement sur la merge request.&lt;/p&gt;
+&lt;p&gt;Pour écrire un nouvel article, il suffit de forker un projet sur GitHub, créer une branche et de créer le fichier .md correspondant. Un des administrateurs  du projet pourra faire ses commentaires directement sur la merge request.&lt;/p&gt;
 
 &lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Déploiement automatique&lt;/h2&gt;
-GitHub Pages gére uniquement les fichiers en html, Hugo génére les fichiers HTML dans un dossier &amp;ldquo;public&amp;rdquo;, il faut donc avoir 2 repos git pour le projet, un qui contient Hugo et l&amp;rsquo;autre qui a uniquement le code HTML. Nous allons voir comment faire une synchronisation automatique.&lt;/p&gt;
+GitHub Pages gére uniquement les fichiers en html, Hugo génère les fichiers HTML dans un dossier &amp;ldquo;public&amp;rdquo;, il faut donc avoir 2 repos git pour le projet, un qui contient Hugo et l&amp;rsquo;autre qui a uniquement le code HTML. Nous allons voir comment faire une synchronisation automatique.&lt;/p&gt;
 
 &lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Principe&lt;/h2&gt;
 A chaque push sur la branche master de notre repo Hugo, on push le répertoire public sur la branch contenant le code HTML.&lt;/p&gt;
@@ -84,7 +84,7 @@ A chaque push sur la branche master de notre repo Hugo, on push le répertoire p
 &lt;p&gt;Voici les variables à renseigner :&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;GH_TOKEN&lt;/em&gt; Token de l&amp;rsquo;étape #2, il permets de faire un push sans demande de mot de passe. Il faut bien penser à cacher l&amp;rsquo;affichage de cette variable en laissant l&amp;rsquo;option à &lt;em&gt;OFF&lt;/em&gt; pour que n&amp;rsquo;importe qui ne puisse pas commit dans vos repos ;)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;GH_TOKEN&lt;/em&gt; Token de l&amp;rsquo;étape #2, il permet de faire un push sans demande de mot de passe. Il faut bien penser à cacher l&amp;rsquo;affichage de cette variable en laissant l&amp;rsquo;option à &lt;em&gt;OFF&lt;/em&gt; pour que n&amp;rsquo;importe qui ne puisse pas commit dans vos repos ;)&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;GH_REPO&lt;/em&gt; Repositery git du code HTML (avec le .git à la fin).&lt;/p&gt;
 
