@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Un registry Docker privé avec GitLab</title>
+	
+	
+	<link rel="stylesheet" href="https://lumao.eu/dist/all.css">
+	<link rel="shortcut icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
+	<link rel="canonical" href="https://lumao.eu/post/gitlab-private-registry-docker/">
+	
+	<meta name="generator" content="Hugo 0.19-DEV" />
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<a class="animsition-link site-logo" href="/" >
+					<h1>Lumao - Développement Magento</h1>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+</header>
+
+	<div class="section section-content" id="section-content">
+		<div class="title-block">
+			<h1 class="title-big">Un registry Docker privé avec GitLab</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 about-info">
+					<p>Aller sur Gitlab.com</p>
+
+<p>Créer un repo privé</p>
+
+<p>Editer le projet :</p>
+
+<p><img src="/images/gitlab-private-registry-docker/edition-projet-gitlab.png" alt="GitLab édition du projet" /></p>
+
+<p>Vérifier que l&rsquo;option &ldquo;Container Registry&rdquo; est activé puis sauvegarder le projet.</p>
+
+<p>Voici la configuration que je recommande :</p>
+
+<p><img src="/images/gitlab-private-registry-docker/parametre-repo-docker.png" alt="GitLab configuration Registry Docker" /></p>
+
+<p>On a donc un repo privé, où on peut mettre notre <em>Dockerfile</em> ainsi que notre configuration spécifique,
+un <em>README</em> qui explique comment récupèrer un tag spécifique ainsi que notre registry Docker</p>
+
+<p>Vous devriez avoir un nouvel onglet dans le projet :</p>
+
+<p><img src="/images/gitlab-private-registry-docker/gitlab-onglet-registry.png" alt="GitLab onglet Registry Docker" /></p>
+
+<pre><code>docker login registry.gitlab.com
+docker build -t registry.gitlab.com/lavoweb/php .
+docker push registry.gitlab.com/lavoweb/php
+</code></pre>
+
+<p>A cette étape, on a une ligne dans notre repo :</p>
+
+<p><img src="/images/gitlab-private-registry-docker/registry-prive-gitlab-premier-push.png" alt="GitLab Registry Docker privé premier push" /></p>
+
+<pre><code>docker tag registry.gitlab.com/lavoweb/php:latest registry.gitlab.com/lavoweb/php:v5.4.1
+docker push registry.gitlab.com/lavoweb/php
+</code></pre>
+
+<p>Maintenant on a également un tag :</p>
+
+<p><img src="/images/gitlab-private-registry-docker/registry-prive-gitlab-tag.png" alt="GitLab Registry Docker privé créer un tag" /></p>
+
+<p>On peut donc pull un tag spécifique</p>
+
+<pre><code>docker pull registry.gitlab.com/lavoweb/php:v5.4.1
+</code></pre>
+
+<p>Tous les développeurs d&rsquo;une équipe auront donc les mêmes paquets installés</p>
+
+<p>Et dans un docker compose :</p>
+
+<pre><code>version: '2'
+services:
+  php:
+    image: registry.gitlab.com/lavoweb/php:v5.4.1
+</code></pre>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer-bottom">
+		<p class="copyright">
+			&copy; 2016 Lumao - Developpé avec <i class="fa fa-heart-o"></i> par <a href="http://lavoweb.net">LavoWeb</a> - Genève, Suisse
+		</p>
+	</footer>
+	<script src="https://lumao.eu/dist/all.js"></script>
+	</body>
+</html>

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lumao.eu/post/gitlab-private-registry-docker/</loc>
+    <lastmod>2016-12-30T11:07:14+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/post/hugo-github-page/</loc>
     <lastmod>2016-12-24T18:49:14+01:00</lastmod>
   </url>
@@ -129,7 +134,7 @@
   
   <url>
     <loc>https://lumao.eu/</loc>
-    <lastmod>2016-12-24T18:49:14+01:00</lastmod>
+    <lastmod>2016-12-30T11:07:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -141,7 +146,7 @@
   
   <url>
     <loc>https://lumao.eu/post/</loc>
-    <lastmod>2016-12-24T18:49:14+01:00</lastmod>
+    <lastmod>2016-12-30T11:07:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   

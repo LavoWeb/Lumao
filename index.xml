@@ -6,8 +6,69 @@
     <description>Recent content on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 24 Dec 2016 18:49:14 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 30 Dec 2016 11:07:14 +0100</lastBuildDate>
     <atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Un registry Docker privé avec GitLab</title>
+      <link>https://lumao.eu/post/gitlab-private-registry-docker/</link>
+      <pubDate>Fri, 30 Dec 2016 11:07:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/gitlab-private-registry-docker/</guid>
+      <description>&lt;p&gt;Aller sur Gitlab.com&lt;/p&gt;
+
+&lt;p&gt;Créer un repo privé&lt;/p&gt;
+
+&lt;p&gt;Editer le projet :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/edition-projet-gitlab.png&#34; alt=&#34;GitLab édition du projet&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vérifier que l&amp;rsquo;option &amp;ldquo;Container Registry&amp;rdquo; est activé puis sauvegarder le projet.&lt;/p&gt;
+
+&lt;p&gt;Voici la configuration que je recommande :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/parametre-repo-docker.png&#34; alt=&#34;GitLab configuration Registry Docker&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On a donc un repo privé, où on peut mettre notre &lt;em&gt;Dockerfile&lt;/em&gt; ainsi que notre configuration spécifique,
+un &lt;em&gt;README&lt;/em&gt; qui explique comment récupèrer un tag spécifique ainsi que notre registry Docker&lt;/p&gt;
+
+&lt;p&gt;Vous devriez avoir un nouvel onglet dans le projet :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/gitlab-onglet-registry.png&#34; alt=&#34;GitLab onglet Registry Docker&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker login registry.gitlab.com
+docker build -t registry.gitlab.com/lavoweb/php .
+docker push registry.gitlab.com/lavoweb/php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A cette étape, on a une ligne dans notre repo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/registry-prive-gitlab-premier-push.png&#34; alt=&#34;GitLab Registry Docker privé premier push&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker tag registry.gitlab.com/lavoweb/php:latest registry.gitlab.com/lavoweb/php:v5.4.1
+docker push registry.gitlab.com/lavoweb/php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Maintenant on a également un tag :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/registry-prive-gitlab-tag.png&#34; alt=&#34;GitLab Registry Docker privé créer un tag&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On peut donc pull un tag spécifique&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker pull registry.gitlab.com/lavoweb/php:v5.4.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tous les développeurs d&amp;rsquo;une équipe auront donc les mêmes paquets installés&lt;/p&gt;
+
+&lt;p&gt;Et dans un docker compose :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;version: &#39;2&#39;
+services:
+  php:
+    image: registry.gitlab.com/lavoweb/php:v5.4.1
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugo, GitHub Pages et Travis CI</title>
@@ -267,15 +328,6 @@ Par email : aurelien@lavoweb.net&lt;/p&gt;
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/06-mavic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Noix d&#39;Arec</title>
-      <link>https://lumao.eu/reference/21-noixdarec/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/reference/21-noixdarec/</guid>
       <description></description>
     </item>
     
