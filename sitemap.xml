@@ -127,6 +127,11 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/post/docker-compose-auto-reverse-proxy/</loc>
+    <lastmod>2013-02-06T11:07:14+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/tags/dev/</loc>
     <lastmod>2016-12-24T12:50:52+01:00</lastmod>
     <priority>0</priority>

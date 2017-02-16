@@ -232,5 +232,165 @@ Par email : aurelien@lavoweb.net&lt;/p&gt;
 </description>
     </item>
     
+    <item>
+      <title>Reverse proxy automatique pour Docker</title>
+      <link>https://lumao.eu/post/docker-compose-auto-reverse-proxy/</link>
+      <pubDate>Wed, 06 Feb 2013 11:07:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/docker-compose-auto-reverse-proxy/</guid>
+      <description>
+
+&lt;p&gt;Dans cet article, on va voir comment faire un reverse proxy qui détecte l&amp;rsquo;ajout d&amp;rsquo;un site,
+génère un certificat SSL SAN pour les noms associés sans aucune action de notre part :)&lt;/p&gt;
+
+&lt;h2 id=&#34;docker-compose&#34;&gt;Docker-compose&lt;/h2&gt;
+
+&lt;p&gt;Pour avoir un exemple plus parlant, on partira sur un site WordPress, créé avec &lt;em&gt;docker-compose&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;træfɪk&#34;&gt;Træfɪk&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;outil magique qui nous servira de reverse proxy.&lt;/p&gt;
+
+&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+|-- acme
+|   `-- acme.json
+|-- compose
+|   `-- soins-naturels.net
+|       |-- data
+|       |   |-- mysql
+|       |   `-- wp-content
+|       `-- docker-compose.yml
+`-- docker-compose.yml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;acme&#34;&gt;Acme&lt;/h3&gt;
+
+&lt;p&gt;C&amp;rsquo;est le doux nom pour &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let’s Encrypt&lt;/a&gt;, vous aurez la liste de vos domaines ainsi que les clés associés dans le fichier json.&lt;/p&gt;
+
+&lt;h3 id=&#34;compose&#34;&gt;Compose&lt;/h3&gt;
+
+&lt;p&gt;Contient tous les sites, le &lt;em&gt;docker-compose&lt;/em&gt; ainsi que les données du site : la base de donnée ainsi que les fichiers.&lt;/p&gt;
+
+&lt;h3 id=&#34;docker-compose-yml&#34;&gt;docker-compose.yml&lt;/h3&gt;
+
+&lt;p&gt;La configuration du reverse proxy.&lt;/p&gt;
+
+&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
+
+&lt;h3 id=&#34;network&#34;&gt;Network&lt;/h3&gt;
+
+&lt;p&gt;On va créer un network pour avoir chaque configuration dans son propre dossier et ne pas tout mélanger.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker network create web
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;træfɪk-1&#34;&gt;Træfɪk&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;./docker-compose.yml&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;version: &amp;quot;2&amp;quot;
+services:
+  traefik:
+    image: traefik:v1.1.2-alpine
+    ports:
+      - &amp;quot;80:80&amp;quot;
+      - &amp;quot;443:443&amp;quot;
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dev/null:/traefik.toml
+      - ./ssl:/etc/traefik/ssl
+      - ./acme:/etc/traefik/acme
+    command: --web -c /dev/null  --docker --logLevel=INFO --docker.watch --acme --acme.OnHostRule=true --acme.storage=/etc/traefik/acme/acme.json --acme.email=aurelien@lavoweb.net --acme.entryPoint=https --entryPoints=&#39;Name:http Address::80&#39; --entryPoints=&#39;Name:https Address::443 TLS&#39; --defaultentrypoints=http,https --acme.domains=&amp;quot;unstickers.com&amp;quot;
+    restart: always
+    environment:
+      - &amp;quot;affinity:container!=traefik*&amp;quot;
+    networks:
+      - web
+networks:
+  web:
+    external:
+      name: web
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Træfɪk est mappé avec les ports &lt;em&gt;&lt;sup&gt;80&lt;/sup&gt;&amp;frasl;&lt;sub&gt;443&lt;/sub&gt;&lt;/em&gt; de l&amp;rsquo;host.&lt;/p&gt;
+
+&lt;p&gt;Il est lancé en mode &lt;em&gt;docker&lt;/em&gt; avec rechargement automatique de la configuration à chaque changement d&amp;rsquo;état des containeurs.&lt;/p&gt;
+
+&lt;p&gt;On active la génération des certificats SSLs et la génération se fera directement depuis la configuration des clients.
+L&amp;rsquo;email associé pour les relances est le miens.&lt;/p&gt;
+
+&lt;h3 id=&#34;wordpress&#34;&gt;WordPress&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;./compose/soins-naturels.net/docker-compose.yml&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;version: &amp;quot;2&amp;quot;
+services:
+  soinsnaturels:
+    image: wordpress
+    expose: 
+     - 80
+     - 443
+    volumes:
+     - ./data/wp-content/:/var/www/html/wp-content
+    labels:
+     - &amp;quot;traefik.port=80&amp;quot;
+     - &amp;quot;traefik.backend=soinsnaturels&amp;quot;
+     - &amp;quot;traefik.frontend.rule=Host:soins-naturels.net,www.soins-naturels.net,dev.soins-naturels.net&amp;quot;
+     - &amp;quot;traefik.docker.network=web&amp;quot;
+    environment:
+     - WORDPRESS_DB_PASSWORD=*******
+     - WORDPRESS_DB_HOST=*******
+    networks:
+     - web
+     - internal
+    links:
+     - mysql
+    depends_on:
+     - mysql
+    restart: always
+  mysql:
+    image: mysql:5.7
+    volumes:
+     - ./data/mysql/:/var/lib/mysql
+    environment:
+     - MYSQL_ROOT_PASSWORD=*******
+     - MYSQL_DATABASE=*******
+    networks:
+     - internal
+    restart: always
+networks:
+  web:
+    external:
+      name: web
+  internal:
+    driver: bridge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On expose les ports 80 et 443 du container.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;traefik.port=80&lt;/em&gt;
+Træfɪk route le trafic sur le port &lt;em&gt;80&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;traefik.backend=soinsnaturels&lt;/em&gt;
+Træfɪk utilise le backend &lt;em&gt;soinsnaturels&lt;/em&gt;, on prendra soin d&amp;rsquo;avoir un backend unique pour chaque site.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;traefik.frontend.rule=Host:soins-naturels.net,www.soins-naturels.net,dev.soins-naturels.net&lt;/em&gt;
+On déclare les noms de domaines qu&amp;rsquo;on utilisera. Un certificat SSL SAN sera généré content tous ces domaines.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;traefik.docker.network=web&lt;/em&gt;
+Træfɪk utilise le network &lt;em&gt;web&lt;/em&gt; pour communiquer avec ce container.&lt;/p&gt;
+
+&lt;h2 id=&#34;merci&#34;&gt;Merci&lt;/h2&gt;
+
+&lt;p&gt;Des articles qui m&amp;rsquo;ont bien aidé à mettre en place cette configuration :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://techan.fr/traefik-et-docker-le-couple-ultime/&#34;&gt;https://techan.fr/traefik-et-docker-le-couple-ultime/&lt;/a&gt;
+&lt;a href=&#34;https://blog.osones.com/traefik-un-reverse-proxy-pour-vos-conteneurs.html&#34;&gt;https://blog.osones.com/traefik-un-reverse-proxy-pour-vos-conteneurs.html&lt;/a&gt;
+&lt;a href=&#34;https://github.com/mikeifomin&#34;&gt;https://github.com/mikeifomin&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
