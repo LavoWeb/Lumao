@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PHPUnit QuickStart</title>
+	
+	
+	<link rel="stylesheet" href="https://lumao.eu/dist/all.css">
+	<link rel="shortcut icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
+	<link rel="canonical" href="https://lumao.eu/post/phpunit/">
+	
+	<meta name="generator" content="Hugo 0.19-DEV" />
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<a class="animsition-link site-logo" href="https://lumao.eu/" >
+					<h1>Lumao - Développement Magento</h1>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+</header>
+
+	<div class="section section-content" id="section-content">
+		<div class="title-block">
+			<h1 class="title-big">PHPUnit QuickStart</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 about-info">
+					
+
+<h1 id="phpunit">PHPUnit</h1>
+
+<h2 id="installation">Installation</h2>
+
+<pre><code>composer require phpunit/phpunit
+</code></pre>
+
+<h2 id="lancement">Lancement</h2>
+
+<h3 id="tout">Tout</h3>
+
+<pre><code>php vendor/phpunit/phpunit/phpunit
+</code></pre>
+
+<h3 id="un-groupe">Un groupe</h3>
+
+<pre><code>php vendor/phpunit/phpunit/phpunit --group critical
+</code></pre>
+
+<h3 id="un-fichier">Un fichier</h3>
+
+<pre><code>php vendor/phpunit/phpunit/phpunit app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php
+</code></pre>
+
+<h3 id="une-méthode">Une méthode</h3>
+
+<pre><code>php vendor/phpunit/phpunit/phpunit --filter getGroupIdFromRole app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php
+</code></pre>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer-bottom">
+		<p class="copyright">
+			&copy; 2017 Lumao - Developpé avec <i class="fa fa-heart-o"></i> par <a href="http://lavoweb.net">LavoWeb</a> - Genève, Suisse
+		</p>
+	</footer>
+	<script src="https://lumao.eu/dist/all.js"></script>
+	</body>
+</html>

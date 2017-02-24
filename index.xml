@@ -6,8 +6,47 @@
     <description>Recent content on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Mon, 06 Feb 2017 11:07:14 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 24 Feb 2017 14:03:14 +0100</lastBuildDate>
     <atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PHPUnit QuickStart</title>
+      <link>https://lumao.eu/post/phpunit/</link>
+      <pubDate>Fri, 24 Feb 2017 14:03:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/phpunit/</guid>
+      <description>
+
+&lt;h1 id=&#34;phpunit&#34;&gt;PHPUnit&lt;/h1&gt;
+
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;composer require phpunit/phpunit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lancement&#34;&gt;Lancement&lt;/h2&gt;
+
+&lt;h3 id=&#34;tout&#34;&gt;Tout&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;un-groupe&#34;&gt;Un groupe&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit --group critical
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;un-fichier&#34;&gt;Un fichier&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;une-méthode&#34;&gt;Une méthode&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit --filter getGroupIdFromRole app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Reverse proxy automatique pour Docker</title>
@@ -470,15 +509,6 @@ Par email : aurelien@lavoweb.net&lt;/p&gt;
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/04-jardinchic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Louisville Slugger</title>
-      <link>https://lumao.eu/reference/12-louisville/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/reference/12-louisville/</guid>
       <description></description>
     </item>
     
