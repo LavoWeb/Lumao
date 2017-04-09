@@ -6,10 +6,30 @@
     <description>Recent content in Posts on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 07 Apr 2017 13:41:14 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 09 Apr 2017 16:11:14 +0100</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contact Lumao</title>
+      <link>https://lumao.eu/post/contact/</link>
+      <pubDate>Sun, 09 Apr 2017 16:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/contact/</guid>
+      <description>N&amp;rsquo;hésitez pas à parler de votre projet via ce formulaire.</description>
+    </item>
+    
+    <item>
+      <title>Développement Laravel</title>
+      <link>https://lumao.eu/post/developpement-laravel/</link>
+      <pubDate>Sun, 09 Apr 2017 16:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/developpement-laravel/</guid>
+      <description>Laravel Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
+Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fournit comme un service, contrairement aux autres, ce n&amp;rsquo;est pas une contrainte de l&amp;rsquo;utiliser.
+Voici l&amp;rsquo;évolution de l&amp;rsquo;intérêt des développeurs pour les gros frameworks du marché :</description>
+    </item>
     
     <item>
       <title>Développement Akeneo PIM</title>
@@ -19,7 +39,7 @@
       <guid>https://lumao.eu/post/developpement-akeneo/</guid>
       <description>Akeneo Akeneo est un Product Information Management. Avec cet outil, vous pouvez gérer des collections de produits très facilement. Pour tous les formats, que ce soit web, print&amp;hellip;
 Le principe est que le PIM contient toutes les informations des produits et est le maitre de l&amp;rsquo;information. Il est souvent couplé avec un Data Asset Management qui stocke les médias (photos, vidéos, musiques&amp;hellip;).
-Modules Akeneo L&amp;rsquo;entreprise Akeneo propose des modules payants en plus de leur solution opensource.</description>
+Akeneo est développé en Symfony 2 et repose sur Oro Platform, un framework robuste et développé activement.</description>
     </item>
     
     <item>
