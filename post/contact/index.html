@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Merci de nous avoir contacté</title>
+	<title>Contact Lumao</title>
 	
 	
 	<link rel="stylesheet" href="https://lumao.eu/dist/all.css">
 	<link rel="shortcut icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
-	<link rel="canonical" href="https://lumao.eu/post/merci/">
+	<link rel="canonical" href="https://lumao.eu/post/contact/">
 	
 	<meta name="generator" content="Hugo 0.20-DEV" />
 </head>
@@ -39,16 +39,28 @@
 
 	<div class="section section-content" id="section-content">
 		<div class="title-block">
-			<h1 class="title-big">Merci de nous avoir contacté</h1>
+			<h1 class="title-big">Contact Lumao</h1>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 about-info">
-					<p>Nous avons bien reçu votre e-mail, nous vous contacterons prochainement.</p>
-
-<p>À bientôt,</p>
-
-<p>L&rsquo;équipe Lumao</p>
+					<p>N&rsquo;hésitez pas à parler de votre projet via ce formulaire.
+<form class="contact-form"  action="https://formspree.io/aurelien@lavoweb.net" method="POST">
+    <div class="row">
+        <div class="col-md-6">
+            <input class="form-input" type="text" placeholder="Nom" name="name" required/>
+        </div>
+        <div class="col-md-6">
+            <input class="form-input" type="email" placeholder="E-mail" name="_replyto" required/>
+        </div>
+    </div>
+    <input type="hidden" name="_subject" value="Contact Lumao" />
+    <input type="hidden" name="_next" value="{{ .Site.BaseURL }}post/merci/" />
+    <input type="hidden" name="_format" value="plain" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <textarea class="form-input" placeholder="Votre Message" name="message"></textarea>
+    <input class="btn form-btn" type="submit" value="Envoyer un message"/>
+</form></p>
 
 				</div>
 			</div>
