@@ -2,12 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Développement Magento</title>
-    <link>https://lumao.eu/index.xml</link>
+    <link>https://lumao.eu/</link>
     <description>Recent content on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 24 Feb 2017 14:03:14 +0100</lastBuildDate>
-    <atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Apr 2017 16:11:14 +0100</lastBuildDate>
+    
+	<atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contact Lumao</title>
+      <link>https://lumao.eu/post/contact/</link>
+      <pubDate>Sun, 09 Apr 2017 16:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/contact/</guid>
+      <description>N&amp;rsquo;hésitez pas à parler de votre projet via ce formulaire.</description>
+    </item>
+    
+    <item>
+      <title>Développement Laravel</title>
+      <link>https://lumao.eu/post/developpement-laravel/</link>
+      <pubDate>Sun, 09 Apr 2017 16:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/developpement-laravel/</guid>
+      <description>Laravel Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
+Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fournit comme un service, contrairement aux autres, ce n&amp;rsquo;est pas une contrainte de l&amp;rsquo;utiliser.
+Voici l&amp;rsquo;évolution de l&amp;rsquo;intérêt des développeurs pour les gros frameworks du marché :</description>
+    </item>
+    
+    <item>
+      <title>Développement Akeneo PIM</title>
+      <link>https://lumao.eu/post/developpement-akeneo/</link>
+      <pubDate>Fri, 07 Apr 2017 13:41:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/developpement-akeneo/</guid>
+      <description>Akeneo Akeneo est un Product Information Management. Avec cet outil, vous pouvez gérer des collections de produits très facilement. Pour tous les formats, que ce soit web, print&amp;hellip;
+Le principe est que le PIM contient toutes les informations des produits et est le maitre de l&amp;rsquo;information. Il est souvent couplé avec un Data Asset Management qui stocke les médias (photos, vidéos, musiques&amp;hellip;).
+Akeneo est développé en Symfony 2 et repose sur Oro Platform, un framework robuste et développé activement.</description>
+    </item>
+    
+    <item>
+      <title>Présentation Seocampus 2017</title>
+      <link>https://lumao.eu/post/0005-seocampus-2017/</link>
+      <pubDate>Fri, 10 Mar 2017 12:17:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/0005-seocampus-2017/</guid>
+      <description>Merci d&amp;rsquo;être venu si nombreux à ma conférence au SEO Campus Paris 2017. J&amp;rsquo;étais &amp;ldquo;un peu&amp;rdquo; stressé, j&amp;rsquo;espère que ça vous a plu quand même.
+Voici les liens des modules que j&amp;rsquo;ai évoqués :
+ CreareSEO DnD Patch Index Url  Et mes slides :
+  SEO et ecommerce sur Magento: retour d’expérience  de Aurélien Lavorel 
+Bonne journée !</description>
+    </item>
     
     <item>
       <title>PHPUnit QuickStart</title>
@@ -15,37 +61,7 @@
       <pubDate>Fri, 24 Feb 2017 14:03:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/phpunit/</guid>
-      <description>
-
-&lt;h1 id=&#34;phpunit&#34;&gt;PHPUnit&lt;/h1&gt;
-
-&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;composer require phpunit/phpunit
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lancement&#34;&gt;Lancement&lt;/h2&gt;
-
-&lt;h3 id=&#34;tout&#34;&gt;Tout&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;un-groupe&#34;&gt;Un groupe&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit --group critical
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;un-fichier&#34;&gt;Un fichier&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;une-méthode&#34;&gt;Une méthode&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;php vendor/phpunit/phpunit/phpunit --filter getGroupIdFromRole app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description> PHPUnit Installation composer require phpunit/phpunit  Lancement Tout php vendor/phpunit/phpunit/phpunit  Un groupe php vendor/phpunit/phpunit/phpunit --group critical  Un fichier php vendor/phpunit/phpunit/phpunit app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php  Une méthode php vendor/phpunit/phpunit/phpunit --filter getGroupIdFromRole app/code/community/Namespace/Module/Test/Model/Cms/CustomerTest.php  </description>
     </item>
     
     <item>
@@ -54,158 +70,10 @@
       <pubDate>Mon, 06 Feb 2017 11:07:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/docker-compose-auto-reverse-proxy/</guid>
-      <description>
-
-&lt;p&gt;Dans cet article, on va voir comment faire un reverse proxy qui détecte l&amp;rsquo;ajout d&amp;rsquo;un site,
-génère un certificat SSL SAN pour les noms associés sans aucune action de notre part :)&lt;/p&gt;
-
-&lt;h2 id=&#34;docker-compose&#34;&gt;Docker-compose&lt;/h2&gt;
-
-&lt;p&gt;Pour avoir un exemple plus parlant, on partira sur un site WordPress, créé avec &lt;em&gt;docker-compose&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;træfɪk&#34;&gt;Træfɪk&lt;/h2&gt;
-
-&lt;p&gt;L&amp;rsquo;outil magique qui nous servira de reverse proxy.&lt;/p&gt;
-
-&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- acme
-|   `-- acme.json
-|-- compose
-|   `-- soins-naturels.net
-|       |-- data
-|       |   |-- mysql
-|       |   `-- wp-content
-|       `-- docker-compose.yml
-`-- docker-compose.yml
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;acme&#34;&gt;Acme&lt;/h3&gt;
-
-&lt;p&gt;C&amp;rsquo;est le doux nom pour &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let’s Encrypt&lt;/a&gt;, vous aurez la liste de vos domaines ainsi que les clés associés dans le fichier json.&lt;/p&gt;
-
-&lt;h3 id=&#34;compose&#34;&gt;Compose&lt;/h3&gt;
-
-&lt;p&gt;Contient tous les sites, le &lt;em&gt;docker-compose&lt;/em&gt; ainsi que les données du site : la base de donnée ainsi que les fichiers.&lt;/p&gt;
-
-&lt;h3 id=&#34;docker-compose-yml&#34;&gt;docker-compose.yml&lt;/h3&gt;
-
-&lt;p&gt;La configuration du reverse proxy.&lt;/p&gt;
-
-&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
-
-&lt;h3 id=&#34;network&#34;&gt;Network&lt;/h3&gt;
-
-&lt;p&gt;On va créer un network pour avoir chaque configuration dans son propre dossier et ne pas tout mélanger.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker network create web
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;træfɪk-1&#34;&gt;Træfɪk&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;./docker-compose.yml&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;version: &amp;quot;2&amp;quot;
-services:
-  traefik:
-    image: traefik:v1.1.2-alpine
-    ports:
-      - &amp;quot;80:80&amp;quot;
-      - &amp;quot;443:443&amp;quot;
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /dev/null:/traefik.toml
-      - ./ssl:/etc/traefik/ssl
-      - ./acme:/etc/traefik/acme
-    command: --web -c /dev/null  --docker --logLevel=INFO --docker.watch --acme --acme.OnHostRule=true --acme.storage=/etc/traefik/acme/acme.json --acme.email=aurelien@lavoweb.net --acme.entryPoint=https --entryPoints=&#39;Name:http Address::80&#39; --entryPoints=&#39;Name:https Address::443 TLS&#39; --defaultentrypoints=http,https --acme.domains=&amp;quot;unstickers.com&amp;quot;
-    restart: always
-    environment:
-      - &amp;quot;affinity:container!=traefik*&amp;quot;
-    networks:
-      - web
-networks:
-  web:
-    external:
-      name: web
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Træfɪk est mappé avec les ports &lt;em&gt;&lt;sup&gt;80&lt;/sup&gt;&amp;frasl;&lt;sub&gt;443&lt;/sub&gt;&lt;/em&gt; de l&amp;rsquo;host.&lt;/p&gt;
-
-&lt;p&gt;Il est lancé en mode &lt;em&gt;docker&lt;/em&gt; avec rechargement automatique de la configuration à chaque changement d&amp;rsquo;état des containeurs.&lt;/p&gt;
-
-&lt;p&gt;On active la génération des certificats SSLs et la génération se fera directement depuis la configuration des clients.
-L&amp;rsquo;email associé pour les relances est le miens.&lt;/p&gt;
-
-&lt;h3 id=&#34;wordpress&#34;&gt;WordPress&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;./compose/soins-naturels.net/docker-compose.yml&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;version: &amp;quot;2&amp;quot;
-services:
-  soinsnaturels:
-    image: wordpress
-    expose: 
-     - 80
-     - 443
-    volumes:
-     - ./data/wp-content/:/var/www/html/wp-content
-    labels:
-     - &amp;quot;traefik.port=80&amp;quot;
-     - &amp;quot;traefik.backend=soinsnaturels&amp;quot;
-     - &amp;quot;traefik.frontend.rule=Host:soins-naturels.net,www.soins-naturels.net,dev.soins-naturels.net&amp;quot;
-     - &amp;quot;traefik.docker.network=web&amp;quot;
-    environment:
-     - WORDPRESS_DB_PASSWORD=*******
-     - WORDPRESS_DB_HOST=*******
-    networks:
-     - web
-     - internal
-    links:
-     - mysql
-    depends_on:
-     - mysql
-    restart: always
-  mysql:
-    image: mysql:5.7
-    volumes:
-     - ./data/mysql/:/var/lib/mysql
-    environment:
-     - MYSQL_ROOT_PASSWORD=*******
-     - MYSQL_DATABASE=*******
-    networks:
-     - internal
-    restart: always
-networks:
-  web:
-    external:
-      name: web
-  internal:
-    driver: bridge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On expose les ports 80 et 443 du container.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;traefik.port=80&lt;/em&gt;
-Træfɪk route le trafic sur le port &lt;em&gt;80&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;traefik.backend=soinsnaturels&lt;/em&gt;
-Træfɪk utilise le backend &lt;em&gt;soinsnaturels&lt;/em&gt;, on prendra soin d&amp;rsquo;avoir un backend unique pour chaque site.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;traefik.frontend.rule=Host:soins-naturels.net,www.soins-naturels.net,dev.soins-naturels.net&lt;/em&gt;
-On déclare les noms de domaines qu&amp;rsquo;on utilisera. Un certificat SSL SAN sera généré content tous ces domaines.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;traefik.docker.network=web&lt;/em&gt;
-Træfɪk utilise le network &lt;em&gt;web&lt;/em&gt; pour communiquer avec ce container.&lt;/p&gt;
-
-&lt;h2 id=&#34;merci&#34;&gt;Merci&lt;/h2&gt;
-
-&lt;p&gt;Des articles qui m&amp;rsquo;ont bien aidé à mettre en place cette configuration :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://techan.fr/traefik-et-docker-le-couple-ultime/&#34;&gt;https://techan.fr/traefik-et-docker-le-couple-ultime/&lt;/a&gt;
-&lt;a href=&#34;https://blog.osones.com/traefik-un-reverse-proxy-pour-vos-conteneurs.html&#34;&gt;https://blog.osones.com/traefik-un-reverse-proxy-pour-vos-conteneurs.html&lt;/a&gt;
-&lt;a href=&#34;https://github.com/mikeifomin&#34;&gt;https://github.com/mikeifomin&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Dans cet article, on va voir comment faire un reverse proxy qui détecte l&amp;rsquo;ajout d&amp;rsquo;un site, génère un certificat SSL SAN pour les noms associés sans aucune action de notre part :)
+Docker-compose Pour avoir un exemple plus parlant, on partira sur un site WordPress, créé avec docker-compose.
+Træfɪk L&amp;rsquo;outil magique qui nous servira de reverse proxy.
+Structure . |-- acme | `-- acme.json |-- compose | `-- soins-naturels.net | |-- data | | |-- mysql | | `-- wp-content | `-- docker-compose.</description>
     </item>
     
     <item>
@@ -214,59 +82,13 @@ Træfɪk utilise le network &lt;em&gt;web&lt;/em&gt; pour communiquer avec ce co
       <pubDate>Fri, 30 Dec 2016 11:07:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/gitlab-private-registry-docker/</guid>
-      <description>&lt;p&gt;Aller sur Gitlab.com&lt;/p&gt;
-
-&lt;p&gt;Créer un repo privé&lt;/p&gt;
-
-&lt;p&gt;Editer le projet :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/edition-projet-gitlab.png&#34; alt=&#34;GitLab édition du projet&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Vérifier que l&amp;rsquo;option &amp;ldquo;Container Registry&amp;rdquo; est activé puis sauvegarder le projet.&lt;/p&gt;
-
-&lt;p&gt;Voici la configuration que je recommande :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/parametre-repo-docker.png&#34; alt=&#34;GitLab configuration Registry Docker&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;On a donc un repo privé, où on peut mettre notre &lt;em&gt;Dockerfile&lt;/em&gt; ainsi que notre configuration spécifique,
-un &lt;em&gt;README&lt;/em&gt; qui explique comment récupèrer un tag spécifique ainsi que notre registry Docker&lt;/p&gt;
-
-&lt;p&gt;Vous devriez avoir un nouvel onglet dans le projet :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/gitlab-onglet-registry.png&#34; alt=&#34;GitLab onglet Registry Docker&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker login registry.gitlab.com
-docker build -t registry.gitlab.com/lavoweb/php .
-docker push registry.gitlab.com/lavoweb/php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A cette étape, on a une ligne dans notre repo :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/registry-prive-gitlab-premier-push.png&#34; alt=&#34;GitLab Registry Docker privé premier push&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker tag registry.gitlab.com/lavoweb/php:latest registry.gitlab.com/lavoweb/php:v5.4.1
-docker push registry.gitlab.com/lavoweb/php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Maintenant on a également un tag :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/gitlab-private-registry-docker/registry-prive-gitlab-tag.png&#34; alt=&#34;GitLab Registry Docker privé créer un tag&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;On peut donc pull un tag spécifique&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker pull registry.gitlab.com/lavoweb/php:v5.4.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Tous les développeurs d&amp;rsquo;une équipe auront donc les mêmes paquets installés&lt;/p&gt;
-
-&lt;p&gt;Et dans un docker compose :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;version: &#39;2&#39;
-services:
-  php:
-    image: registry.gitlab.com/lavoweb/php:v5.4.1
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Aller sur Gitlab.com
+Créer un repo privé
+Editer le projet :
+Vérifier que l&amp;rsquo;option &amp;ldquo;Container Registry&amp;rdquo; est activé puis sauvegarder le projet.
+Voici la configuration que je recommande :
+On a donc un repo privé, où on peut mettre notre Dockerfile ainsi que notre configuration spécifique, un README qui explique comment récupèrer un tag spécifique ainsi que notre registry Docker
+Vous devriez avoir un nouvel onglet dans le projet :</description>
     </item>
     
     <item>
@@ -275,111 +97,10 @@ services:
       <pubDate>Sat, 24 Dec 2016 18:49:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/hugo-github-page/</guid>
-      <description>
-
-&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Introduction&lt;/h2&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; est un générateur de site statique, il est rapide, compatible toute plateforme et est très simple à prendre en main.
-Il est fourni avec un serveur intégré et l&amp;rsquo;extension live-reload, vous pouvez donc écrire un article en MarkDown et voir directement le résultat sans rafraîchir la page.&lt;/p&gt;
-
-&lt;p&gt;Faire des sites statiques permets de réduire les coûts d&amp;rsquo;hébergements et d&amp;rsquo;enlever le risque de failles applicatives.&lt;/p&gt;
-
-&lt;h3 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h3&gt;
-
-&lt;p&gt;GitHub permets d&amp;rsquo;héberger gratuitement (en cas pas projet open-source) des documentations ou encore un site web.&lt;/p&gt;
-
-&lt;p&gt;On peut même avoir un nom de domaine personnalisé, il suffit de faire un fichier CNAME à la racine du projet et de mettre votre nom de domaine dedans.&lt;/p&gt;
-
-&lt;p&gt;Ensuite, il suffit de configurer votre nom de domaine avec ces ips :&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;192.30.252.153&lt;/p&gt;
-
-&lt;p&gt;192.30.252.154&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;travis-ci&#34;&gt;Travis CI&lt;/h3&gt;
-
-&lt;p&gt;Travis CI est un outil d&amp;rsquo;intégration continue, il est également gratuit pour les projets open-source et est intégrable en un clic avec Github.&lt;/p&gt;
-
-&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Intérêt&lt;/h2&gt;
-Avoir un site web versionné, avec gestion de workflow et multi-utilisateur. On a les mêmes fonctionnalités que sous WordPress avec quelques plugins sauf que c&amp;rsquo;est rapide sans avoir à faire du développement poussé ou installer un module de cache.&lt;/p&gt;
-
-&lt;p&gt;C&amp;rsquo;est le top pour un blog, on peut même gérer les commentaires avec Disqus.&lt;/p&gt;
-
-&lt;p&gt;Pour écrire un nouvel article, il suffit de forker un projet sur GitHub, créer une branche et de créer le fichier .md correspondant. Un des administrateurs  du projet pourra faire ses commentaires directement sur la merge request.&lt;/p&gt;
-
-&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Déploiement automatique&lt;/h2&gt;
-GitHub Pages gére uniquement les fichiers en html, Hugo génère les fichiers HTML dans un dossier &amp;ldquo;public&amp;rdquo;, il faut donc avoir 2 repos git pour le projet, un qui contient Hugo et l&amp;rsquo;autre qui a uniquement le code HTML. Nous allons voir comment faire une synchronisation automatique.&lt;/p&gt;
-
-&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Principe&lt;/h2&gt;
-A chaque push sur la branche master de notre repo Hugo, on push le répertoire public sur la branch contenant le code HTML.&lt;/p&gt;
-
-&lt;p&gt;C&amp;rsquo;est ici qu&amp;rsquo;intervient &lt;em&gt;Travis CI&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;h2 class=&#34;post-title&#34;&gt;Étapes&lt;/h2&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-1-lier-le-compte-travis-ci-à-github&#34;&gt;Étape #1 : Lier le compte Travis CI à GitHub&lt;/h3&gt;
-
-&lt;p&gt;Pour cela il suffit de s&amp;rsquo;enregistrer, aller sur la page &lt;em&gt;Accounts&lt;/em&gt;, choisir le bon compte (entre le compte personnel et le compte entreprise) et de cliquer sur le repo Hugo. Ex:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/ajouter-repo-travis-ci.png&#34; alt=&#34;Ajouter un repo GitHub dans Travis CI&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-2-créer-un-token-github&#34;&gt;Étape #2 : Créer un Token GitHub&lt;/h3&gt;
-
-&lt;p&gt;Pour faire un push automatique. Il faut aller &lt;a href=&#34;https://github.com/settings/tokens/new&#34;&gt;ici&lt;/a&gt;, taper votre mot-de-passe puis donner le droit &amp;ldquo;repo&amp;rdquo; :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/creer-token-github.png&#34; alt=&#34;Créer un token GitHub pour push automatique&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Il faut ensuite copier le token, vous ne pourrez le voir qu&amp;rsquo;une seule fois.&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-3-configurer-travis-ci&#34;&gt;Étape #3 : Configurer Travis CI&lt;/h3&gt;
-
-&lt;p&gt;Il faut maintenant renseigner quelques variables d&amp;rsquo;environnement au build Travis CI. Il faut d&amp;rsquo;abord être sur le bon repo puis cliquer sur le lien settings :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/travis-ci-lien-options.png&#34; alt=&#34;Travis CI lien vers les options&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Voici les variables à renseigner :&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;GH_TOKEN&lt;/em&gt; Token de l&amp;rsquo;étape #2, il permet de faire un push sans demande de mot de passe. Il faut bien penser à cacher l&amp;rsquo;affichage de cette variable en laissant l&amp;rsquo;option à &lt;em&gt;OFF&lt;/em&gt; pour que n&amp;rsquo;importe qui ne puisse pas commit dans vos repos ;)&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;GH_REPO&lt;/em&gt; Repositery git du code HTML (avec le .git à la fin).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;REPO&lt;/em&gt; Nom du repo, ce qu&amp;rsquo;il y a entre le dernier / et le .git (Lumao dans mon cas)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://lumao.eu/images/hugo-github-page/variable-environnement-travis-ci.png&#34; alt=&#34;Travis CI configurer variables d&#39;environnements&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-4-script-de-déploiement-automatique&#34;&gt;Étape #4 : Script de déploiement automatique&lt;/h3&gt;
-
-&lt;p&gt;Il est disponible ici : &lt;a href=&#34;https://github.com/LavoWeb/Lumao-Hugo/blob/master/deploy.sh&#34;&gt;https://github.com/LavoWeb/Lumao-Hugo/blob/master/deploy.sh&lt;/a&gt;, c&amp;rsquo;est un mix de celui de plusieurs sites, dont la doc officielle, à une différence près : il fonctionne.&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-5-fichier-de-build&#34;&gt;Étape #5 : Fichier de build&lt;/h3&gt;
-
-&lt;p&gt;Si vous avez bien suivi, il ne nous manque plus que le fichier de build &lt;em&gt;.travis.yml&lt;/em&gt;, voici celui que j&amp;rsquo;utilise :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;language: go
-install: go get github.com/spf13/hugo
-script:
-  - hugo
-  - bash ./deploy.sh
-notifications:
-    email:
-        on_failure: always
-branches:
-  only:
-  - master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On installe Hugo, on le lance (il faut bien penser à avoir déclaré son thème dans le fichier de config &lt;em&gt;config.toml&lt;/em&gt;) puis on lance le script fait plus haut.&lt;/p&gt;
-
-&lt;p&gt;En cas de problème, un mail est envoyé.&lt;/p&gt;
-
-&lt;p&gt;Et finalement on ne fait le déploiement que sur la branch master pour ne pas publier quelque chose qui serait sur la dev.&lt;/p&gt;
-</description>
+      <description>Introduction
+Hugo Hugo est un générateur de site statique, il est rapide, compatible toute plateforme et est très simple à prendre en main. Il est fourni avec un serveur intégré et l&amp;rsquo;extension live-reload, vous pouvez donc écrire un article en MarkDown et voir directement le résultat sans rafraîchir la page.
+Faire des sites statiques permets de réduire les coûts d&amp;rsquo;hébergements et d&amp;rsquo;enlever le risque de failles applicatives.
+GitHub Pages GitHub permets d&amp;rsquo;héberger gratuitement (en cas pas projet open-source) des documentations ou encore un site web.</description>
     </item>
     
     <item>
@@ -388,33 +109,8 @@ branches:
       <pubDate>Sat, 24 Dec 2016 14:49:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/mentions-legales/</guid>
-      <description>
-
-&lt;p&gt;Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l’économie numérique, il est précisé aux utilisateurs du site lumao.eu l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi.&lt;/p&gt;
-
-&lt;h3 id=&#34;edition-du-site&#34;&gt;Edition du site&lt;/h3&gt;
-
-&lt;p&gt;Le site lumao.eu est édité par la société NODALYS S.A.S, au capital social de 45.000 euros, immatriculée au Registre du Commerce et des Sociétés d’Aix-en-Provence sous le n° 483 180 808 00030 et dont le siège social est situé à L’Escapade, Bât. E Avenue Paul Jullien 13100 Le Tholonet (TVA intracommunautaire n° FR44 483 180 808).&lt;/p&gt;
-
-&lt;h3 id=&#34;responsable-de-publication&#34;&gt;Responsable de publication&lt;/h3&gt;
-
-&lt;p&gt;Monsieur Lavorel Aurélien&lt;/p&gt;
-
-&lt;h3 id=&#34;hébergeur&#34;&gt;Hébergeur&lt;/h3&gt;
-
-&lt;p&gt;Le site lumao.eu est hébergé par la société OVH, 2 rue Kellermann – 59100 Roubaix. Le stockage des données personnelles des utilisateurs est assuré par la société OVH, 2 rue Kellermann – 59100 Roubaix qui adhère au «Safe Harbor» en conformité avec les exigences françaises de la Commission Nationale de l’Informatique et des Libertés (CNIL) en matière de transfert de données vers des entreprises établies aux Etats-Unis.&lt;/p&gt;
-
-&lt;h3 id=&#34;nous-contacter&#34;&gt;Nous contacter&lt;/h3&gt;
-
-&lt;p&gt;Par téléphone : 06 47 41 03 49
-Par email : aurelien@lavoweb.net&lt;/p&gt;
-
-&lt;h3 id=&#34;cnil&#34;&gt;CNIL&lt;/h3&gt;
-
-&lt;p&gt;La collecte et le traitement informatique des données nominatives par la Société a fait l’objet d’une déclaration simplifiée auprès de l’autorité française de protection des données personnelles (la Commission Nationale de l’Informatique et des Libertés – CNIL) (numéro n° 1842022).&lt;/p&gt;
-
-&lt;p&gt;Vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant au Responsable CNIL de la Société à l’adresse postale (ou électronique) suivante : 635, route du Noiret 74350 Cruseilles (aurelien@lavoweb.net). Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.&lt;/p&gt;
-</description>
+      <description>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l’économie numérique, il est précisé aux utilisateurs du site lumao.eu l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+Edition du site Le site lumao.eu est édité par la société NODALYS S.A.S, au capital social de 45.000 euros, immatriculée au Registre du Commerce et des Sociétés d’Aix-en-Provence sous le n° 483 180 808 00030 et dont le siège social est situé à L’Escapade, Bât.</description>
     </item>
     
     <item>
@@ -423,12 +119,9 @@ Par email : aurelien@lavoweb.net&lt;/p&gt;
       <pubDate>Sat, 24 Dec 2016 14:49:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/merci/</guid>
-      <description>&lt;p&gt;Nous avons bien reçu votre e-mail, nous vous contacterons prochainement.&lt;/p&gt;
-
-&lt;p&gt;À bientôt,&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;équipe Lumao&lt;/p&gt;
-</description>
+      <description>Nous avons bien reçu votre e-mail, nous vous contacterons prochainement.
+À bientôt,
+L&amp;rsquo;équipe Lumao</description>
     </item>
     
     <item>
@@ -509,6 +202,114 @@ Par email : aurelien@lavoweb.net&lt;/p&gt;
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/04-jardinchic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Louisville Slugger</title>
+      <link>https://lumao.eu/reference/12-louisville/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/12-louisville/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mavic</title>
+      <link>https://lumao.eu/reference/06-mavic/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/06-mavic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Noix d&#39;Arec</title>
+      <link>https://lumao.eu/reference/21-noixdarec/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/21-noixdarec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Place des Gones</title>
+      <link>https://lumao.eu/reference/15-pdg/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/15-pdg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prairymood</title>
+      <link>https://lumao.eu/reference/20-prairymood/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/20-prairymood/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R-Cade</title>
+      <link>https://lumao.eu/reference/03-rcade/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/03-rcade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Salomon</title>
+      <link>https://lumao.eu/reference/02-salomon/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/02-salomon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suunto</title>
+      <link>https://lumao.eu/reference/14-suunto/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/14-suunto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vente à la Cave</title>
+      <link>https://lumao.eu/reference/09-valc/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/09-valc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Violon</title>
+      <link>https://lumao.eu/reference/16-violon/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/16-violon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wilson</title>
+      <link>https://lumao.eu/reference/05-wilson/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/05-wilson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arcteryx</title>
+      <link>https://lumao.eu/reference/07-arcteryx/</link>
+      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/07-arcteryx/</guid>
       <description></description>
     </item>
     
