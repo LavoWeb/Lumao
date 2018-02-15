@@ -32,12 +32,12 @@ Voici l&amp;rsquo;évolution de l&amp;rsquo;intérêt des développeurs pour les
     </item>
     
     <item>
-      <title>Développement Akeneo PIM</title>
+      <title>Développement Akeneo</title>
       <link>https://lumao.eu/post/developpement-akeneo/</link>
       <pubDate>Fri, 07 Apr 2017 13:41:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/developpement-akeneo/</guid>
-      <description>Akeneo Akeneo est un Product Information Management. Avec cet outil, vous pouvez gérer des collections de produits très facilement. Pour tous les formats, que ce soit web, print&amp;hellip;
+      <description>Akeneo Akeneo est un Product Information Management. Avec cet outil, vous pouvez gérer des collections de produits très facilement. Pour tous les formats, que ce soit web, print, les données ERP&amp;hellip;
 Le principe est que le PIM contient toutes les informations des produits et est le maitre de l&amp;rsquo;information. Il est souvent couplé avec un Data Asset Management qui stocke les médias (photos, vidéos, musiques&amp;hellip;).
 Akeneo est développé en Symfony 2 et repose sur Oro Platform, un framework robuste et développé activement.</description>
     </item>
