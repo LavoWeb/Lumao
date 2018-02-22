@@ -48,17 +48,20 @@
 				<div class="col-md-12 about-info">
 					
 
-<p>Aujourd&rsquo;hui, on va voir comment faire un déploiement automatique (*C*ontinuous *D*eployment, CD pour la suite)
+<p>Aujourd&rsquo;hui, on va voir comment faire un déploiement automatique (<strong>C</strong>ontinuous <strong>D</strong>eployment, CD pour la suite)
 au push sur une branche de Gitlab.</p>
 
 <h2 id="alternatives-à-gitlab">Alternatives à Gitlab</h2>
 
-<p>Tout d&rsquo;abord quelques alternatives à Gitlab CI, il y en a beaucoup d&rsquo;autres.
-* Travis CI
-* CircleCI
-* Jenkins
-* Bamboo
-* &hellip;</p>
+<p>Tout d&rsquo;abord quelques alternatives à Gitlab CI, il y en a beaucoup d&rsquo;autres.</p>
+
+<ul>
+<li>Travis CI</li>
+<li>CircleCI</li>
+<li>Jenkins</li>
+<li>Bamboo</li>
+<li>&hellip;</li>
+</ul>
 
 <h2 id="alternatives-à-aws">Alternatives à AWS</h2>
 
@@ -96,14 +99,14 @@ git push -u origin master
 
 <p>Je pars du principe que vous avez un compte et que vous connaissez un minimum le système.</p>
 
-<p><em>Avertissement</em> : AWS est un service <em>payant</em>, les actions à faire coûtent de l&rsquo;argent, et la facture peut-être lourde. Réfléchissez avant de cliquer et couper les services quand vous n&rsquo;en avez plus l&rsquo;utilitée.</p>
+<p><strong>Avertissement</strong> : AWS est un service <strong>payant</strong>, les actions à faire coûtent de l&rsquo;argent, et la facture peut-être lourde. Réfléchissez avant de cliquer et couper les services quand vous n&rsquo;en avez plus l&rsquo;utilitée.</p>
 
 <p>On va accéder à chaque service via la recherche.
 ### S3</p>
 
 <h4 id="créer-un-compartiment">Créer un compartiment</h4>
 
-<p>On va créer un compartiment avec le nom <em>lumao-tuto-blog</em>.
+<p>On va créer un compartiment avec le nom <strong>lumao-tuto-blog</strong>.
 <img src="/images/9/s3-1.png" alt="AWS S3 créer un compartiment" />
 <img src="/images/9/s3-2.png" alt="AWS S3 définir propriété" />
 <img src="/images/9/s3-3.png" alt="AWS S3 définir authorisations" />
@@ -113,11 +116,11 @@ git push -u origin master
 
 <p>Depuis la liste, on clic sur le nouveau compartiment créé,</p>
 
-<p>On upload un fichier <em>app.zip</em>.
+<p>On upload un fichier <strong>app.zip</strong>.
 <img src="/images/9/s3-5.png" alt="AWS S3 upload fichier zip" />
 On clic dessus pour voir le détail
 <img src="/images/9/s3-6.png" alt="AWS S3 détail fichier uploadé" />
-On copie-colle le lien, pour moi : <em><a href="https://s3.eu-west-3.amazonaws.com/lumao-tuto-blog/app.zip">https://s3.eu-west-3.amazonaws.com/lumao-tuto-blog/app.zip</a></em></p>
+On copie-colle le lien, pour moi : <strong><a href="https://s3.eu-west-3.amazonaws.com/lumao-tuto-blog/app.zip">https://s3.eu-west-3.amazonaws.com/lumao-tuto-blog/app.zip</a></strong></p>
 
 <p>On le garde dans un coin, on en aura besoin après.</p>
 
@@ -129,26 +132,32 @@ On copie-colle le lien, pour moi : <em><a href="https://s3.eu-west-3.amazonaws.c
 <img src="/images/9/eb-2.png" alt="AWS EB information de l'environnement" />
 On charge les sources
 <img src="/images/9/eb-3.png" alt="AWS EB changer sources depuis S3" />
-On clic sur <em>Créer un environnement</em></p>
+On clic sur <strong>Créer un environnement</strong></p>
 
 <p>On attend quelques minutes puis l&rsquo;environnement est dispo.
 <img src="/images/9/eb-4.png" alt="AWS EB tableau de bord environnement" />
-En haut à droite, on voit l&rsquo;url, ici : <em><a href="http://lumao-tuto-blog.tuf69sshns.eu-west-3.elasticbeanstalk.com/">http://lumao-tuto-blog.tuf69sshns.eu-west-3.elasticbeanstalk.com/</a></em></p>
+En haut à droite, on voit l&rsquo;url, ici : <strong><a href="http://lumao-tuto-blog.tuf69sshns.eu-west-3.elasticbeanstalk.com/">http://lumao-tuto-blog.tuf69sshns.eu-west-3.elasticbeanstalk.com/</a></strong></p>
 
 <h4 id="iam">IAM</h4>
 
 <p><img src="/images/9/iam-1.png" alt="AWS IAM ajouter un utilisateur" />
-Ajouter les droits :
-* AmazonS3FullAccess
-* AWSElasticBeanstalkFullAccess</p>
+Ajouter les droits :</p>
+
+<ul>
+<li>AmazonS3FullAccess</li>
+<li>AWSElasticBeanstalkFullAccess</li>
+</ul>
 
 <p>Ce n&rsquo;est pas très sécurisé mais ça ira pour aujourd&rsquo;hui. Tuto IAM sur Google pour la suite !
 <img src="/images/9/iam-2.png" alt="AWS IAM droit utilisateurs" />
 <img src="/images/9/iam-3.png" alt="AWS IAM récapitulatif création utilisateur" />
 Vous avez maintenant vos clés d&rsquo;accès.
-<img src="/images/9/iam-4.png" alt="AWS IAM clé secrète" />
-* ID : <em>AKIAISWWDEGU67CCU6IQ</em>
-* Password : <em>PB8OZq5k6aHjXfaaEs+ifr38GzIMFvuBj2k+7t4y</em></p>
+<img src="/images/9/iam-4.png" alt="AWS IAM clé secrète" /></p>
+
+<ul>
+<li>ID : <strong>AKIAISWWDEGU67CCU6IQ</strong></li>
+<li>Password : <strong>PB8OZq5k6aHjXfaaEs+ifr38GzIMFvuBj2k+7t4y</strong></li>
+</ul>
 
 <p>Il ne faut pas partager ces clés, elles sont très importante. Je les ais bien sur désactivés avant de mettre en ligne ce tuto ;)</p>
 
@@ -165,10 +174,10 @@ Une &ldquo;grosse&rdquo; partie de l&rsquo;interface la gestion de cluster Kuber
 
 <h3 id="concept-généraux">Concept généraux</h3>
 
-<p>Une <em>pipeline</em> est un groupe de <em>job</em> exécutées par <em>stage</em> (étapes).
+<p>Une <strong>pipeline</strong> est un groupe de <strong>job</strong> exécutées par <strong>stage</strong> (étapes).
 Toutes les tâches d&rsquo;une étape sont exécutées en parallèle (si possible),
 et si elles réussissent toutes, le pipeline passe à l&rsquo;étape suivante.
-Si l&rsquo;un des <em>job</em> échoue, l&rsquo;étape suivante n&rsquo;est (habituellement) pas exécutée.</p>
+Si l&rsquo;un des <strong>job</strong> échoue, l&rsquo;étape suivante n&rsquo;est (habituellement) pas exécutée.</p>
 
 <h3 id="pipelines">Pipelines</h3>
 
@@ -199,7 +208,7 @@ On voit la liste des pipelines qui ont été fait, on peut faire un rollback à 
 
 <h3 id="charts">Charts</h3>
 
-<p>Je triche, c&rsquo;est sur un autre projet qui est <em>légèrement</em> plus actif :)
+<p>Je triche, c&rsquo;est sur un autre projet qui est <strong>légèrement</strong> plus actif :)
 <img src="/images/9/cha-1.png" alt="CI charts" /></p>
 
 <h3 id="ci">CI</h3>
@@ -207,7 +216,7 @@ On voit la liste des pipelines qui ont été fait, on peut faire un rollback à 
 <p>La question que tout le monde se pose : comment on fait ça ?
 Facile, il suffit d&rsquo;un fichier&hellip;</p>
 
-<p><em>.gitlab-ci.yml</em></p>
+<p><strong>.gitlab-ci.yml</strong></p>
 
 <pre><code>stages:
   - build
@@ -244,25 +253,28 @@ cache:
 
 <p>Et voilà !</p>
 
-<p>On a 2 étapes dans la CI :
-* build. On crée tous les fichiers dont on a besoin
-* deploy. On déploie sur AWS Beanstalk</p>
+<p>On a 2 étapes dans la CI :</p>
 
-<p>La première (build) consiste à faire un <em>composer install</em>. On part de l&rsquo;image docker <em>lavoweb/php-7.0</em>,
+<ul>
+<li>build. On crée tous les fichiers dont on a besoin</li>
+<li>deploy. On déploie sur AWS Beanstalk</li>
+</ul>
+
+<p>La première (build) consiste à faire un <strong>composer install</strong>. On part de l&rsquo;image docker <strong>lavoweb/php-7.0</strong>,
 on télécharge le .phar de composer et on le lance.</p>
 
 <p>La seconde étape (deploy) consiste à zipper les sources, copier le fichier sur S3 et enfin refaire notre environnement Beanstalk.
-Pour ça, on utilise l&rsquo;image docker <em>lavoweb/aws-cli</em>.</p>
+Pour ça, on utilise l&rsquo;image docker <strong>lavoweb/aws-cli</strong>.</p>
 
 <p>Comme vous le voyez, on utilise pas la même image, vous vous doûtez bien qu&rsquo;il ne vas pas garder les fichiers.
 Dans la CI, on peut jouer une analyse de code, puis lancer les tests unitaire et enfin lancer le déploiement.
-Il faut activer une option pour garder les fichiers, c&rsquo;est l&rsquo;instruction <em>cache</em>.</p>
+Il faut activer une option pour garder les fichiers, c&rsquo;est l&rsquo;instruction <strong>cache</strong>.</p>
 
 <p>Vous avez sûrement remarqué qu&rsquo;il y a quelques variables dans le script.</p>
 
 <p>Ce sont les accès aux différents services. Il ne faut surtout pas les mettre dans le code, n&rsquo;importe qui pourrait y avoir accès.</p>
 
-<p>Pour éviter ça, Gitlab dispose d&rsquo;une gestion des secrets. C&rsquo;est dans <em>Settings</em> =&gt; <em>CI / DI</em> =&gt; *Secret variables *.
+<p>Pour éviter ça, Gitlab dispose d&rsquo;une gestion des secrets. C&rsquo;est dans <strong>Settings</strong> =&gt; <strong>CI / DI</strong> =&gt; <strong>Secret variables</strong>.
 <img src="/images/9/gse-1.png" alt="CI settings" />
 Vous pouvez avoir des configuration différentes par envirronement.</p>
 
@@ -293,6 +305,13 @@ Vous pouvez avoir des configuration différentes par envirronement.</p>
             js.src = "//connect.facebook.net/fr_FR/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script>
+        jQuery(document).ready(function() {
+			jQuery('img').each(function() {
+				jQuery(this).addClass('img-responsive');
+			});
+        });
 	</script>
 
 	<div class="fb-page"
