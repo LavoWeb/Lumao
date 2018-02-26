@@ -46,14 +46,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 about-info">
-					
-
-<p>Aujourd&rsquo;hui, on va voir comment faire un déploiement automatique (<strong>C</strong>ontinuous <strong>D</strong>eployment, CD pour la suite)
+					<p>Aujourd&rsquo;hui, on va voir comment faire un déploiement automatique (<strong>C</strong>ontinuous <strong>D</strong>eployment, CD pour la suite)
 au push sur une branche de Gitlab.</p>
 
-<h2 id="alternatives-à-gitlab">Alternatives à Gitlab</h2>
-
-<p>Tout d&rsquo;abord quelques alternatives à Gitlab CI, il y en a beaucoup d&rsquo;autres.</p>
+<p><h2 class="post-title">Alternatives à Gitlab</h2>
+Tout d&rsquo;abord quelques alternatives à Gitlab CI, il y en a beaucoup d&rsquo;autres.</p>
 
 <ul>
 <li>Travis CI</li>
@@ -63,9 +60,8 @@ au push sur une branche de Gitlab.</p>
 <li>&hellip;</li>
 </ul>
 
-<h2 id="alternatives-à-aws">Alternatives à AWS</h2>
-
-<p>Vous pouvez brancher n&rsquo;importe quoi comme système de déploiement, du moment que vous arrivez
+<p><h2 class="post-title">Alternatives à AWS</h2>
+Vous pouvez brancher n&rsquo;importe quoi comme système de déploiement, du moment que vous arrivez
 à lancer le déploiement depuis un containeur Docker.</p>
 
 <p>Vous ne savez pas faire du Docker ? Ce n&rsquo;est pas grave, il y en a qui travaille pour vous : <a href="https://hub.docker.com">https://hub.docker.com</a></p>
@@ -74,9 +70,8 @@ au push sur une branche de Gitlab.</p>
 
 <p>Il n&rsquo;y a pas votre techno ? Payez un presta pour vous le faire !</p>
 
-<h2 id="projet-de-test">Projet de test</h2>
-
-<p>Rien de fou pour ça, on va installer un micro-framework : <a href="https://lumao.eu/post/developpement-laravel/">Lumen</a>, voici la <a href="https://lumen.laravel.com/docs/5.6#installing-lumen">procédure d&rsquo;installation</a>.</p>
+<p><h2 class="post-title">Projet de test</h2>
+Rien de fou pour ça, on va installer un micro-framework : <a href="https://lumao.eu/post/developpement-laravel/">Lumen</a>, voici la <a href="https://lumen.laravel.com/docs/5.6#installing-lumen">procédure d&rsquo;installation</a>.</p>
 
 <pre><code>composer create-project --prefer-dist laravel/lumen blog
 cd blog
@@ -91,9 +86,8 @@ git push -u origin master
 
 <p>Pourquoi ne pas faire un simple fichier html ? Tout simplement pour faire plusieurs étapes dans notre déploiement.</p>
 
-<h2 id="configuration-aws">Configuration AWS</h2>
-
-<p>La partie la plus complexe, l&rsquo;interface n&rsquo;est pas la plus simple à utiliser.</p>
+<p><h2 class="post-title">Configuration AWS</h2>
+La partie la plus complexe, l&rsquo;interface n&rsquo;est pas la plus simple à utiliser.</p>
 
 <p>Voici l&rsquo;url : <a href="https://aws.amazon.com/fr/console/">https://aws.amazon.com/fr/console/</a></p>
 
@@ -102,19 +96,15 @@ git push -u origin master
 <p><strong>Avertissement</strong> : AWS est un service <strong>payant</strong>, les actions à faire coûtent de l&rsquo;argent, et la facture peut-être lourde. Réfléchissez avant de cliquer et couper les services quand vous n&rsquo;en avez plus l&rsquo;utilitée.</p>
 
 <p>On va accéder à chaque service via la recherche.
-### S3</p>
-
-<h4 id="créer-un-compartiment">Créer un compartiment</h4>
-
-<p>On va créer un compartiment avec le nom <strong>lumao-tuto-blog</strong>.
+### S3
+<h4 class="post-title">Créer un compartiment</h4>
+On va créer un compartiment avec le nom <strong>lumao-tuto-blog</strong>.
 <img src="/images/9/s3-1.png" alt="AWS S3 créer un compartiment" />
 <img src="/images/9/s3-2.png" alt="AWS S3 définir propriété" />
 <img src="/images/9/s3-3.png" alt="AWS S3 définir authorisations" />
-<img src="/images/9/s3-4.png" alt="AWS S3 vérification" /></p>
-
-<h4 id="ajouter-un-fichier-dans-le-compartiment-s3">Ajouter un fichier dans le compartiment S3</h4>
-
-<p>Depuis la liste, on clic sur le nouveau compartiment créé,</p>
+<img src="/images/9/s3-4.png" alt="AWS S3 vérification" />
+<h4 class="post-title">Ajouter un fichier dans le compartiment S3</h4>
+Depuis la liste, on clic sur le nouveau compartiment créé,</p>
 
 <p>On upload un fichier <strong>app.zip</strong>.
 <img src="/images/9/s3-5.png" alt="AWS S3 upload fichier zip" />
@@ -124,11 +114,9 @@ On copie-colle le lien, pour moi : <strong><a href="https://s3.eu-west-3.amazona
 
 <p>On le garde dans un coin, on en aura besoin après.</p>
 
-<h3 id="elastic-beanstalk">Elastic Beanstalk</h3>
-
-<h4 id="créer-un-environnement">Créer un environnement</h4>
-
-<p><img src="/images/9/eb-1.png" alt="AWS EB créer un environnement" />
+<p><h3 class="post-title">Elastic Beanstalk</h3>
+<h4 class="post-title">Créer un environnement</h4>
+<img src="/images/9/eb-1.png" alt="AWS EB créer un environnement" />
 <img src="/images/9/eb-2.png" alt="AWS EB information de l'environnement" />
 On charge les sources
 <img src="/images/9/eb-3.png" alt="AWS EB changer sources depuis S3" />
@@ -138,9 +126,8 @@ On clic sur <strong>Créer un environnement</strong></p>
 <img src="/images/9/eb-4.png" alt="AWS EB tableau de bord environnement" />
 En haut à droite, on voit l&rsquo;url, ici : <strong><a href="http://lumao-tuto-blog.tuf69sshns.eu-west-3.elasticbeanstalk.com/">http://lumao-tuto-blog.tuf69sshns.eu-west-3.elasticbeanstalk.com/</a></strong></p>
 
-<h4 id="iam">IAM</h4>
-
-<p><img src="/images/9/iam-1.png" alt="AWS IAM ajouter un utilisateur" />
+<p><h4 class="post-title">IAM</h4>
+<img src="/images/9/iam-1.png" alt="AWS IAM ajouter un utilisateur" />
 Ajouter les droits :</p>
 
 <ul>
@@ -161,27 +148,23 @@ Vous avez maintenant vos clés d&rsquo;accès.
 
 <p>Il ne faut pas partager ces clés, elles sont très importante. Je les ais bien sur désactivés avant de mettre en ligne ce tuto ;)</p>
 
-<h3 id="récapitulatif-amazon">Récapitulatif Amazon</h3>
-
-<p>On a maintenant un environnement élastique, qui déploie un fichier zip quand on lui demande (via un clic sur un bouton ou via l&rsquo;API).
+<p><h3 class="post-title">Récapitulatif Amazon</h3>
+On a maintenant un environnement élastique, qui déploie un fichier zip quand on lui demande (via un clic sur un bouton ou via l&rsquo;API).
 Le déploiement se fait sur un environnement qui s&rsquo;adapte tout seul à la charge en cours. Si vous avez &ldquo;beaucoup&rdquo; de trafic, au lieu d&rsquo;avoir un serveur, vous pouvez en avoir 5,
 la seule limite est votre portefeuille. Potentiellement sur plusieurs zones géographiques.</p>
 
-<h2 id="gitlab-cis">Gitlab CIs</h2>
-
-<p>Je vais essayer de résumer quelques fonctions de Gitlab pour le CD.
+<p><h2 class="post-title">Gitlab CIs</h2>
+Je vais essayer de résumer quelques fonctions de Gitlab pour le CD.
 Une &ldquo;grosse&rdquo; partie de l&rsquo;interface la gestion de cluster Kubernetes, ça ne sera pas pour aujourd&rsquo;hui.</p>
 
-<h3 id="concept-généraux">Concept généraux</h3>
-
-<p>Une <strong>pipeline</strong> est un groupe de <strong>job</strong> exécutées par <strong>stage</strong> (étapes).
+<p><h3 class="post-title">Concept généraux</h3>
+Une <strong>pipeline</strong> est un groupe de <strong>job</strong> exécutées par <strong>stage</strong> (étapes).
 Toutes les tâches d&rsquo;une étape sont exécutées en parallèle (si possible),
 et si elles réussissent toutes, le pipeline passe à l&rsquo;étape suivante.
 Si l&rsquo;un des <strong>job</strong> échoue, l&rsquo;étape suivante n&rsquo;est (habituellement) pas exécutée.</p>
 
-<h3 id="pipelines">Pipelines</h3>
-
-<p>Voici ce qu&rsquo;on va faire :
+<p><h3 class="post-title">Pipelines</h3>
+Voici ce qu&rsquo;on va faire :
 <img src="/images/9/pip-1.png" alt="CI pipelines" />
 Sur un projet un peu plus actif :
 <img src="/images/9/pip-2.png" alt="CI pipelines" /></p>
@@ -189,31 +172,26 @@ Sur un projet un peu plus actif :
 <p>On voit l&rsquo;état de la pipeline, qui l&rsquo;a lancé, sur quel commit et le status de chaque stage.
 Il y en a certaines qui ne sont pas passé et si on va dessus, on verra le message d&rsquo;erreur.</p>
 
-<h3 id="jobs">Jobs</h3>
-
-<p><img src="/images/9/job-1.png" alt="CI jobs" />
+<p><h3 class="post-title">Jobs</h3>
+<img src="/images/9/job-1.png" alt="CI jobs" />
 On voit le détail de chaque job.</p>
 
-<h3 id="schedules">Schedules</h3>
-
-<p><img src="/images/9/sch-1.png" alt="CI schedules" />
+<p><h3 class="post-title">Schedules</h3>
+<img src="/images/9/sch-1.png" alt="CI schedules" />
 On peut déployer automatique suivant une crontab, ici une fois par semaine la branche master.</p>
 
-<h3 id="environments">Environments</h3>
-
-<p>Liste des environnements avec url.
+<p><h3 class="post-title">Environments</h3>
+Liste des environnements avec url.
 <img src="/images/9/env-1.png" alt="CI environments" />
 On voit la liste des pipelines qui ont été fait, on peut faire un rollback à une ancienne version ou re-deployer la version en cours.
 <img src="/images/9/env-2.png" alt="CI liste pipelines par environment" /></p>
 
-<h3 id="charts">Charts</h3>
-
-<p>Je triche, c&rsquo;est sur un autre projet qui est <strong>légèrement</strong> plus actif :)
+<p><h3 class="post-title">Charts</h3>
+Je triche, c&rsquo;est sur un autre projet qui est <strong>légèrement</strong> plus actif :)
 <img src="/images/9/cha-1.png" alt="CI charts" /></p>
 
-<h3 id="ci">CI</h3>
-
-<p>La question que tout le monde se pose : comment on fait ça ?
+<p><h3 class="post-title">CI</h3>
+La question que tout le monde se pose : comment on fait ça ?
 Facile, il suffit d&rsquo;un fichier&hellip;</p>
 
 <p><strong>.gitlab-ci.yml</strong></p>
