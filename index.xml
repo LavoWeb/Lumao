@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Elastic Beanstalk déployer containeur Docker</title>
+      <link>https://lumao.eu/post/aws-docker-deploy/</link>
+      <pubDate>Thu, 22 Feb 2018 11:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/aws-docker-deploy/</guid>
+      <description>On a vu comment déployer automatiquement du code quand on push sur une branche. Maintenant, il est temps de customiser le déploiement pour mettre nos containeurs.
+Configuration Beanstalk (EB) Pas grand chose à faire, si vous avez ceci dans votre tableau de bord, c&amp;rsquo;est bon : Dockerfile Au déploiement, EB va lire les fichiers Dockerfile et Dockerrun.aws.json, on va rester sur le premier vu qu&amp;rsquo;on connait déjà.
+Dans le principe, EB va éxecuter le containeur et le publier une fois qu&amp;rsquo;il aura fini.</description>
+    </item>
+    
+    <item>
       <title>Gitlab CI &#43; AWS</title>
       <link>https://lumao.eu/post/gitlab-aws/</link>
       <pubDate>Thu, 22 Feb 2018 11:11:14 +0100</pubDate>
