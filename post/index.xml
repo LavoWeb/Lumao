@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Thu, 22 Feb 2018 11:11:14 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 08 Mar 2018 21:11:14 +0100</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Conditions Générales de Services</title>
+      <link>https://lumao.eu/post/cgs/</link>
+      <pubDate>Thu, 08 Mar 2018 21:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/cgs/</guid>
+      <description>Date de dernière mise à jour : 08/03/2018
+Article 1 – MENTION LÉGALES Le présent site, accessible à l&amp;rsquo;URL https://lumao.eu/ (le « Site »), est édité par :
+Lumao, SASU au capital de 100 euros, inscrite au R.C.S. d&amp;rsquo;Annecy sous le numéro **835305657, dont le siège social est situé au 22 boulevard du Semnoz, 74600 Annecy,** représenté(e) par Lavorel Auréliendûment habilité(e),
+(Ci-après désigné le « Vendeur »).
+Le numéro individuel TVA de l&amp;rsquo;Exploitant est : FR 68 835305657.</description>
+    </item>
     
     <item>
       <title>Elastic Beanstalk déployer containeur Docker</title>
@@ -48,9 +61,9 @@ Alternatives à Gitlab Tout d&amp;rsquo;abord quelques alternatives à Gitlab CI
       <pubDate>Sun, 09 Apr 2017 16:11:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/developpement-laravel/</guid>
-      <description>Laravel Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
+      <description>Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
 Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fournit comme un service, contrairement aux autres, ce n&amp;rsquo;est pas une contrainte de l&amp;rsquo;utiliser.
-Voici l&amp;rsquo;évolution de l&amp;rsquo;intérêt des développeurs pour les gros frameworks du marché :</description>
+Création d&amp;rsquo;APIs   Laravel permets de créer une API en quelques clics, c&amp;rsquo;est adapté pour faire un prototype pour des startups.</description>
     </item>
     
     <item>
@@ -59,7 +72,7 @@ Voici l&amp;rsquo;évolution de l&amp;rsquo;intérêt des développeurs pour les
       <pubDate>Fri, 07 Apr 2017 13:41:14 +0100</pubDate>
       
       <guid>https://lumao.eu/post/developpement-akeneo/</guid>
-      <description>Akeneo Akeneo est un Product Information Management. Avec cet outil, vous pouvez gérer des collections de produits très facilement. Pour tous les formats, que ce soit web, print, les données ERP&amp;hellip;
+      <description>Akeneo est un Product Information Management. Avec cet outil, vous pouvez gérer des collections de produits très facilement. Pour tous les formats, que ce soit web, print, les données ERP&amp;hellip;
 Le principe est que le PIM contient toutes les informations des produits et est le maitre de l&amp;rsquo;information. Il est souvent couplé avec un Data Asset Management qui stocke les médias (photos, vidéos, musiques&amp;hellip;).
 Akeneo est développé en Symfony 2 et repose sur Oro Platform, un framework robuste et développé activement.</description>
     </item>
@@ -132,7 +145,7 @@ GitHub Pages GitHub permets d&amp;rsquo;héberger gratuitement (en cas pas proje
       
       <guid>https://lumao.eu/post/mentions-legales/</guid>
       <description>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l’économie numérique, il est précisé aux utilisateurs du site lumao.eu l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
-Edition du site Le site lumao.eu est édité par la société NODALYS S.A.S, au capital social de 45.000 euros, immatriculée au Registre du Commerce et des Sociétés d’Aix-en-Provence sous le n° 483 180 808 00030 et dont le siège social est situé à L’Escapade, Bât.</description>
+Edition du site Le site lumao.eu est édité par la société LUMAO SASU, au capital social de 100 euros, immatriculée au Registre du Commerce et des Sociétés d’Annecy sous le n° 83530565700016 et dont le siège social est situé au 22 boulevard du Semnoz 74600 Annecy (TVA intracommunautaire n° FR 68 835305657).</description>
     </item>
     
     <item>
