@@ -59,6 +59,17 @@ Dans le principe, EB va éxecuter le containeur et le publier une fois qu&amp;rs
     </item>
     
     <item>
+      <title>Envoyer des mails via Amazon SES sur Magento 2</title>
+      <link>https://lumao.eu/post/magento-ses/</link>
+      <pubDate>Thu, 22 Feb 2018 11:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/magento-ses/</guid>
+      <description>Comment envoyer des e-mails via Amazon Simple Email Service pour un site sous Magento 2 ?
+Il y a 3 étapes : - Configurer le compte Amazon - Changer les DNS - Valider les e-mails - Installer/Configurer une extension Magento
+Amazon Pour une fois, on ne peut pas utiliser le service depuis beaucoup de zones, en europe ce sera l&#39;Irlande (eu-west-1 pour les intimes). Ajouter un domaine Il faut d&#39;abord authoriser le domaine à envoyer les mails, ça se passe depuis la [console](https://eu-west-1.</description>
+    </item>
+    
+    <item>
       <title>Gitlab CI &#43; AWS</title>
       <link>https://lumao.eu/post/gitlab-aws/</link>
       <pubDate>Thu, 22 Feb 2018 11:11:14 +0100</pubDate>
