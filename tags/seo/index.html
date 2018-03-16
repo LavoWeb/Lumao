@@ -73,6 +73,21 @@ Le numéro individuel TVA de l&rsquo;Exploitant est : FR 68 835305657.
 	</article></div>
 		
 			<div class="section-about">	<article>
+		<h1><a href="https://lumao.eu/post/sftp-docker/">Connexion SFTP avec Docker</a></h1>
+		<time>22.02.2018 11:11</time>
+		
+		<div>
+			Comment accéder au contenu sur vos containeurs Docker ?
+Comme sur les autres, via sftp.
+Pourquoi faire ça Dans la logique DevOps, on ne va pas utiliser la connexion sftp pour modifier le code directement en prod, non on a le déploiement automatique et ça sera écrasé.
+Par contre, les webmasteurs ont surement besoin de modifier ou d&rsquo;ajouter régulièrement des médias au site. Il ne faut pas les versionner, c&rsquo;est pour cet usecase qu&rsquo;on va faire un containeur sftp.
+			
+				<a href="https://lumao.eu/post/sftp-docker/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
 		<h1><a href="https://lumao.eu/post/aws-docker-deploy/">Elastic Beanstalk déployer containeur Docker</a></h1>
 		<time>22.02.2018 11:11</time>
 		
@@ -162,21 +177,6 @@ Bonne journée !
 		</div>
 	</article></div>
 		
-			<div class="section-about">	<article>
-		<h1><a href="https://lumao.eu/post/docker-compose-auto-reverse-proxy/">Reverse proxy automatique pour Docker</a></h1>
-		<time>06.02.2017 11:07</time>
-		
-		<div>
-			Dans cet article, on va voir comment faire un reverse proxy qui détecte l&rsquo;ajout d&rsquo;un site, génère un certificat SSL SAN pour les noms associés sans aucune action de notre part :)
-Docker-compose Pour avoir un exemple plus parlant, on partira sur un site WordPress, créé avec docker-compose.
-Træfɪk L&rsquo;outil magique qui nous servira de reverse proxy.
-Structure . |-- acme | `-- acme.json |-- compose | `-- soins-naturels.net | |-- data | | |-- mysql | | `-- wp-content | `-- docker-compose.
-			
-				<a href="https://lumao.eu/post/docker-compose-auto-reverse-proxy/">Lire la suite...</a>
-			
-		</div>
-	</article></div>
-		
 		<div>
 
 1 sur 2
@@ -197,11 +197,11 @@ Structure . |-- acme | `-- acme.json |-- compose | `-- soins-naturels.net | |-- 
 					
 					<li><a href="https://lumao.eu/post/cgs/">Conditions Générales de Services</a></li>
 					
+					<li><a href="https://lumao.eu/post/sftp-docker/">Connexion SFTP avec Docker</a></li>
+					
 					<li><a href="https://lumao.eu/post/aws-docker-deploy/">Elastic Beanstalk déployer containeur Docker</a></li>
 					
 					<li><a href="https://lumao.eu/post/gitlab-aws/">Gitlab CI &#43; AWS</a></li>
-					
-					<li><a href="https://lumao.eu/iban/">IBAN</a></li>
 					
 				</ul>
 			</div>
