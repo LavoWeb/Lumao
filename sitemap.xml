@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lumao.eu/reference/22-vitrine-avenue/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/post/charte-vp/</loc>
     <lastmod>2018-03-08T21:11:14+01:00</lastmod>
   </url>
@@ -239,13 +244,13 @@
   
   <url>
     <loc>https://lumao.eu/tags/dev/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lumao.eu/</loc>
-    <lastmod>2018-03-08T21:11:14+01:00</lastmod>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -269,7 +274,7 @@
   
   <url>
     <loc>https://lumao.eu/reference/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,7 +286,7 @@
   
   <url>
     <loc>https://lumao.eu/tags/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
