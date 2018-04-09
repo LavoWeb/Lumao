@@ -6,10 +6,22 @@
     <description>Recent content on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 24 Mar 2018 12:50:52 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 09 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Recrutement développeur Magento</title>
+      <link>https://lumao.eu/post/job-magento/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumao.eu/post/job-magento/</guid>
+      <description>On recherche un développeur Magento confirmé en télétravail. Tu peux travailler de n’importe où avec une bonne connexion, même à l’étranger si cela n’influence pas ta productivité.
+Tu dois maîtriser Git, Slack, Trello et Magento (une certification est préférable).
+On cherche quelqu’un de passionner par l’informatique, tu as d’autres activités en rapport en dehors du travail. Que ce soit contribution open-source, formation, indépendant&amp;hellip;
+Il faudrait que tu aies une autre spécialité, de l’intégration front, designer, développement dans une autre techno.</description>
+    </item>
     
     <item>
       <title>Vitrine Avenue</title>
