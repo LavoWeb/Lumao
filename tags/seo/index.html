@@ -43,6 +43,21 @@
 		
 		
 			<div class="section-about">	<article>
+		<h1><a href="https://lumao.eu/post/openvpn-docker/">Configurer OpenVPN avec Docker</a></h1>
+		<time>22.06.2018 00:00</time>
+		
+		<div>
+			Un article très court aujourd&rsquo;hui pour monter un VPN sur un serveur avec docker-compose en quelques minutes.
+Serveur OpenVPN Très simple, on crée un répertoire openvpn et on mets le fichier docker-compose.yml :
+openvpn: image: 'kylemanna/openvpn' volumes: - './data:/etc/openvpn' ports: - &quot;1194:1194/udp&quot; cap_add: - NET_ADMIN restart: always  On fait la configuration :
+docker run --name openvpn_openvpn_1 -v /etc/openvpn busybox docker run --volumes-from openvpn_openvpn_1 --rm kylemanna/openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM docker run --volumes-from openvpn_openvpn_1 --rm -it kylemanna/openvpn ovpn_initpki  On crée un utilisateur :
+			
+				<a href="https://lumao.eu/post/openvpn-docker/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
 		<h1><a href="https://lumao.eu/post/job-magento/">Recrutement développeur Magento</a></h1>
 		<time>09.04.2018 00:00</time>
 		
@@ -173,20 +188,6 @@ Création d&rsquo;APIs   Laravel permets de créer une API en quelques clics, c&
 		</div>
 	</article></div>
 		
-			<div class="section-about">	<article>
-		<h1><a href="https://lumao.eu/post/developpement-akeneo/">Développement Akeneo</a></h1>
-		<time>07.04.2017 13:41</time>
-		
-		<div>
-			Akeneo est un Product Information Management. Avec cet outil, vous pouvez gérer des collections de produits très facilement. Pour tous les formats, que ce soit web, print, les données ERP&hellip;
-Le principe est que le PIM contient toutes les informations des produits et est le maitre de l&rsquo;information. Il est souvent couplé avec un Data Asset Management qui stocke les médias (photos, vidéos, musiques&hellip;).
-Akeneo est développé en Symfony 2 et repose sur Oro Platform, un framework robuste et développé activement.
-			
-				<a href="https://lumao.eu/post/developpement-akeneo/">Lire la suite...</a>
-			
-		</div>
-	</article></div>
-		
 		<div>
 
 1 sur 2
@@ -203,6 +204,8 @@ Akeneo est développé en Symfony 2 et repose sur Oro Platform, un framework rob
 			<div>
 				<ul>
 					
+					<li><a href="https://lumao.eu/post/openvpn-docker/">Configurer OpenVPN avec Docker</a></li>
+					
 					<li><a href="https://lumao.eu/post/job-magento/">Recrutement développeur Magento</a></li>
 					
 					<li><a href="https://lumao.eu/reference/22-vitrine-avenue/">Vitrine Avenue</a></li>
@@ -210,8 +213,6 @@ Akeneo est développé en Symfony 2 et repose sur Oro Platform, un framework rob
 					<li><a href="https://lumao.eu/post/charte-vp/">Charte sur le respect de la vie privée</a></li>
 					
 					<li><a href="https://lumao.eu/post/cgs/">Conditions Générales de Services</a></li>
-					
-					<li><a href="https://lumao.eu/post/sftp-docker/">Connexion SFTP avec Docker</a></li>
 					
 				</ul>
 			</div>
