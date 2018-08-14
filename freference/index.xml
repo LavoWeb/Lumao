@@ -6,10 +6,19 @@
     <description>Recent content in Freferences on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 24 Dec 2016 12:50:52 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 02 Aug 2018 12:50:52 +0100</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/freference/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Medaille de bapteme</title>
+      <link>https://lumao.eu/freference/05-mdp/</link>
+      <pubDate>Thu, 02 Aug 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/freference/05-mdp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Capel Store</title>
@@ -44,15 +53,6 @@
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/freference/01-noixdarec/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teo Jasmin</title>
-      <link>https://lumao.eu/freference/04-teojasmin/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/freference/04-teojasmin/</guid>
       <description></description>
     </item>
     

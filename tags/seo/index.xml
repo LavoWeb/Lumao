@@ -6,7 +6,7 @@
     <description>Recent content in Seo on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 24 Dec 2016 12:50:52 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 14 Aug 2018 01:50:52 +0100</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>Atomic</title>
       <link>https://lumao.eu/reference/01-atomic/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
+      <pubDate>Tue, 14 Aug 2018 01:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/01-atomic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medaille de bapteme</title>
+      <link>https://lumao.eu/freference/05-mdp/</link>
+      <pubDate>Thu, 02 Aug 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/freference/05-mdp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medaille de bapteme</title>
+      <link>https://lumao.eu/reference/23-mdp/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/23-mdp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NutriLife</title>
+      <link>https://lumao.eu/reference/25-nutri/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/25-nutri/</guid>
       <description></description>
     </item>
     
@@ -62,15 +89,6 @@
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/03-rcade/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teo Jasmin</title>
-      <link>https://lumao.eu/freference/04-teojasmin/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/freference/04-teojasmin/</guid>
       <description></description>
     </item>
     

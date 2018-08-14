@@ -6,17 +6,80 @@
     <description>Recent content in References on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 24 Mar 2018 12:50:52 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 14 Aug 2018 01:50:52 +0100</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Vitrine Avenue</title>
-      <link>https://lumao.eu/reference/22-vitrine-avenue/</link>
+      <title>Atomic</title>
+      <link>https://lumao.eu/reference/01-atomic/</link>
+      <pubDate>Tue, 14 Aug 2018 01:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/01-atomic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Abripiscine</title>
+      <link>https://lumao.eu/reference/26-abrisud/</link>
       <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
       
-      <guid>https://lumao.eu/reference/22-vitrine-avenue/</guid>
+      <guid>https://lumao.eu/reference/26-abrisud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Literie online</title>
+      <link>https://lumao.eu/reference/28-lit/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/28-lit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medaille de bapteme</title>
+      <link>https://lumao.eu/reference/23-mdp/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/23-mdp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NutriLife</title>
+      <link>https://lumao.eu/reference/25-nutri/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/25-nutri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Panier des sens</title>
+      <link>https://lumao.eu/reference/24-pds/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/24-pds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Viveo</title>
+      <link>https://lumao.eu/reference/29-viveo/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/29-viveo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kayak attitude</title>
+      <link>https://lumao.eu/reference/27-kayak/</link>
+      <pubDate>Thu, 22 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/27-kayak/</guid>
       <description></description>
     </item>
     
@@ -35,15 +98,6 @@
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/18-acrodeal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Atomic</title>
-      <link>https://lumao.eu/reference/01-atomic/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/reference/01-atomic/</guid>
       <description></description>
     </item>
     
@@ -233,6 +287,15 @@
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/07-arcteryx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vitrine Avenue</title>
+      <link>https://lumao.eu/reference/22-vitrine-avenue/</link>
+      <pubDate>Thu, 24 Mar 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/22-vitrine-avenue/</guid>
       <description></description>
     </item>
     

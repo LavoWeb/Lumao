@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lumao.eu/reference/01-atomic/</loc>
+    <lastmod>2018-08-14T01:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/freference/05-mdp/</loc>
+    <lastmod>2018-08-02T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/post/openvpn-docker/</loc>
     <lastmod>2018-06-22T00:00:00+00:00</lastmod>
   </url>
@@ -13,8 +23,38 @@
   </url>
   
   <url>
-    <loc>https://lumao.eu/reference/22-vitrine-avenue/</loc>
+    <loc>https://lumao.eu/reference/26-abrisud/</loc>
     <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/reference/28-lit/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/reference/23-mdp/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/reference/25-nutri/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/reference/24-pds/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/reference/29-viveo/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/reference/27-kayak/</loc>
+    <lastmod>2018-03-22T12:50:52+01:00</lastmod>
   </url>
   
   <url>
@@ -109,11 +149,6 @@
   
   <url>
     <loc>https://lumao.eu/reference/18-acrodeal/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lumao.eu/reference/01-atomic/</loc>
     <lastmod>2016-12-24T12:50:52+01:00</lastmod>
   </url>
   
@@ -218,11 +253,6 @@
   </url>
   
   <url>
-    <loc>https://lumao.eu/freference/04-teojasmin/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lumao.eu/reference/04-teojasmin/</loc>
     <lastmod>2016-12-24T12:50:52+01:00</lastmod>
   </url>
@@ -248,31 +278,36 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/reference/22-vitrine-avenue/</loc>
+    <lastmod>2016-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lumao.eu/tags/dev/</loc>
-    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-08-14T01:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lumao.eu/</loc>
-    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-14T01:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lumao.eu/freference/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-08-02T12:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lumao.eu/tags/perf/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-08-14T01:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -284,19 +319,19 @@
   
   <url>
     <loc>https://lumao.eu/reference/</loc>
-    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-08-14T01:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lumao.eu/tags/seo/</loc>
-    <lastmod>2016-12-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-08-14T01:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lumao.eu/tags/</loc>
-    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+    <lastmod>2018-08-14T01:50:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   

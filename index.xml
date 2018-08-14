@@ -6,10 +6,28 @@
     <description>Recent content on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 22 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Aug 2018 01:50:52 +0100</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atomic</title>
+      <link>https://lumao.eu/reference/01-atomic/</link>
+      <pubDate>Tue, 14 Aug 2018 01:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/01-atomic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medaille de bapteme</title>
+      <link>https://lumao.eu/freference/05-mdp/</link>
+      <pubDate>Thu, 02 Aug 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/freference/05-mdp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Configurer OpenVPN avec Docker</title>
@@ -36,11 +54,65 @@ Il faudrait que tu aies une autre spécialité, de l’intégration front, desig
     </item>
     
     <item>
-      <title>Vitrine Avenue</title>
-      <link>https://lumao.eu/reference/22-vitrine-avenue/</link>
+      <title>Abripiscine</title>
+      <link>https://lumao.eu/reference/26-abrisud/</link>
       <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
       
-      <guid>https://lumao.eu/reference/22-vitrine-avenue/</guid>
+      <guid>https://lumao.eu/reference/26-abrisud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Literie online</title>
+      <link>https://lumao.eu/reference/28-lit/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/28-lit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medaille de bapteme</title>
+      <link>https://lumao.eu/reference/23-mdp/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/23-mdp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NutriLife</title>
+      <link>https://lumao.eu/reference/25-nutri/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/25-nutri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Panier des sens</title>
+      <link>https://lumao.eu/reference/24-pds/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/24-pds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Viveo</title>
+      <link>https://lumao.eu/reference/29-viveo/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/29-viveo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kayak attitude</title>
+      <link>https://lumao.eu/reference/27-kayak/</link>
+      <pubDate>Thu, 22 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/27-kayak/</guid>
       <description></description>
     </item>
     
@@ -259,15 +331,6 @@ L&amp;rsquo;équipe Lumao</description>
     </item>
     
     <item>
-      <title>Atomic</title>
-      <link>https://lumao.eu/reference/01-atomic/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/reference/01-atomic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Capel Store</title>
       <link>https://lumao.eu/freference/02-capelstore/</link>
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
@@ -449,15 +512,6 @@ L&amp;rsquo;équipe Lumao</description>
     
     <item>
       <title>Teo Jasmin</title>
-      <link>https://lumao.eu/freference/04-teojasmin/</link>
-      <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
-      
-      <guid>https://lumao.eu/freference/04-teojasmin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teo Jasmin</title>
       <link>https://lumao.eu/reference/04-teojasmin/</link>
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
@@ -498,6 +552,15 @@ L&amp;rsquo;équipe Lumao</description>
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/07-arcteryx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vitrine Avenue</title>
+      <link>https://lumao.eu/reference/22-vitrine-avenue/</link>
+      <pubDate>Thu, 24 Mar 2016 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/22-vitrine-avenue/</guid>
       <description></description>
     </item>
     
