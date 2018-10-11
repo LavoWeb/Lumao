@@ -104,10 +104,8 @@ docker run --name openvpn_openvpn_1 -v /etc/openvpn busybox docker run --volumes
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://lumao.eu/post/job-magento/</guid>
-      <description>On recherche un développeur Magento confirmé en télétravail. Tu peux travailler de n’importe où avec une bonne connexion, même à l’étranger si cela n’influence pas ta productivité.
-Tu dois maîtriser Git, Slack, Trello et Magento (une certification est préférable).
-On cherche quelqu’un de passionné par l’informatique, tu as d’autres activités en rapport en dehors du travail. Que ce soit contribution open-source, formation, indépendant&amp;hellip;
-Il faudrait que tu aies une autre spécialité, de l’intégration front, designer, développement dans une autre techno.</description>
+      <description>Avant toute chose, l&amp;rsquo;offre est pour plusieurs profils, c&amp;rsquo;est normal de ne pas avoir toutes les compétences !
+On recherche un développeur Magento confirmé en télétravail. Tu peux travailler de n’importe où avec une bonne connexion, même à l’étranger si cela n’influence pas ta productivité. Si la stack technique te botte mais que tu es junior, c&amp;rsquo;est possible également de te former (uniquement sur Annecy) si tu es étudiant ou si tu as des compétences en graphisme/ops.</description>
     </item>
     
     <item>
