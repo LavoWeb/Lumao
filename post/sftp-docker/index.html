@@ -59,9 +59,11 @@
 				<div class="col-md-12 about-info">
 					<p>Comment accéder au contenu sur vos containeurs Docker ?</p>
 
-<p>Comme sur les autres, via sftp.</p>
+<p>Comme sur les autres, via (s)ftp.</p>
 
-<p><h2 class="post-title">Pourquoi faire ça</h2>
+<h2 class="post-title">SFTP</h2>
+
+<p><h3 class="post-title">Pourquoi faire ça</h3>
 Dans la logique <strong>DevOps</strong>, on ne va pas utiliser la connexion sftp pour modifier
 le code directement en prod, non on a le déploiement automatique et ça sera écrasé.</p>
 
@@ -69,7 +71,7 @@ le code directement en prod, non on a le déploiement automatique et ça sera é
 des médias au site. Il ne faut pas les versionner, c&rsquo;est pour cet usecase qu&rsquo;on va
 faire un containeur sftp.</p>
 
-<p><h2 class="post-title">Docker compose</h2>
+<p><h3 class="post-title">Docker compose</h3>
 <strong>docker-compose.yml</strong></p>
 
 <pre><code>version: &quot;2&quot;
@@ -145,6 +147,42 @@ ChrootDirectory %h
 <pre><code>docker cp sftp_container:/etc/ssh/ssh_host_rsa_key ssh/ssh_host_rsa_key
 </code></pre>
 
+<h2 class="post-title">FTP</h2>
+
+<pre><code>version: &quot;2&quot;
+services:
+  sftp:
+    image: stilliard/pure-ftpd
+    volumes:
+        - ../example.com/src/:/home/vsftpd/user
+    environment:
+      - &quot;FTP_USER_NAME=user&quot;
+      - &quot;FTP_USER_PASS=password&quot;
+      - &quot;FTP_USER_HOME=/home/vsftpd/user&quot;
+      - &quot;PASV_ADDRESS=1.2.3.4&quot;
+      - &quot;PUBLICHOST=1.2.3.4&quot;
+      - &quot;FTP_PASSIVE_PORTS=21100:21110&quot;
+      - &quot;PASV_MAX_PORT=21110&quot;
+    ports:
+        - &quot;20-21:20-21&quot;
+        - &quot;21100-21110:21100-21110&quot;
+    expose:
+     - 20
+     - 21
+     - 21100
+     - 21101
+     - 21102
+     - 21103
+     - 21104
+     - 21105
+     - 21106
+     - 21107
+     - 21108
+     - 21109
+     - 21110
+    restart: always
+</code></pre>
+
 				</div>
 			</div>
 		</div>
@@ -156,39 +194,12 @@ ChrootDirectory %h
 	<link rel="stylesheet" href="https://lumao.eu/dist/all.css">
 	<script src="https://lumao.eu/dist/all.js"></script>
 	<script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId      : '95100348886',
-                xfbml      : true,
-                version    : 'v2.6'
-            });
-        };
-
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/fr_FR/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-	</script>
-	<script>
         jQuery(document).ready(function() {
 			jQuery('img').each(function() {
 				jQuery(this).addClass('img-responsive');
 			});
         });
 	</script>
-
-	<div class="fb-page hidden-xs"
-		 data-href="https://www.facebook.com/Lumao-292389297939472/"
-		 data-tabs="messages"
-		 data-width="400"
-		 data-height="250"
-		 data-small-header="true">
-		<div class="fb-xfbml-parse-ignore">
-			<blockquote></blockquote>
-		</div>
-	</div>
+	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=5834f365-e0f5-4aed-929d-fd5bce2c17f7"> </script>
 	</body>
 </html>
