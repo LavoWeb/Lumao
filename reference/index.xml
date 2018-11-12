@@ -6,10 +6,37 @@
     <description>Recent content in References on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 14 Aug 2018 01:50:52 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 12 Nov 2018 12:50:52 +0100</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/reference/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Boxspring</title>
+      <link>https://lumao.eu/reference/32-bx/</link>
+      <pubDate>Mon, 12 Nov 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/32-bx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brun de Vian-Tiran</title>
+      <link>https://lumao.eu/reference/30-bvt/</link>
+      <pubDate>Mon, 12 Nov 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/30-bvt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Les Passionnés du Vin</title>
+      <link>https://lumao.eu/reference/31-pds/</link>
+      <pubDate>Mon, 12 Nov 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/reference/31-pds/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Atomic</title>
