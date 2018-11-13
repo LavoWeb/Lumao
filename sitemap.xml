@@ -18,6 +18,61 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/ecommerce/creation/dropshipping/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/creation/boutique/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/recommandation/fredhopper/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/maintenance/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/b2b-marketplace/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/connect/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/telecharger/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/marketplace/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/tunnel-de-vente/livraison/partenaire-logistique/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/creation/gratuit/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/tunnel-de-vente/paiement/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/site/charte-graphique/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
   </url>
@@ -333,6 +388,16 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/ecommerce/cms/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/creation/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/site/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
   </url>
@@ -349,6 +414,11 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/ecommerce/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/freference/</loc>
     <lastmod>2018-08-02T12:50:52+01:00</lastmod>
     <priority>0</priority>
@@ -358,6 +428,22 @@
     <loc>https://lumao.eu/tags/hosting/</loc>
     <lastmod>2018-11-12T12:50:52+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/tunnel-de-vente/livraison/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/recommandation/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -388,6 +474,11 @@
     <loc>https://lumao.eu/tags/</loc>
     <lastmod>2018-11-12T12:50:52+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/tunnel-de-vente/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

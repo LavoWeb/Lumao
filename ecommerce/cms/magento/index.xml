@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magentos on Développement Magento</title>
+    <link>https://lumao.eu/ecommerce/cms/magento/</link>
+    <description>Recent content in Magentos on Développement Magento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://lumao.eu/ecommerce/cms/magento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>La Maintenance de votre Site Magento par des Experts</title>
+      <link>https://lumao.eu/ecommerce/cms/magento/maintenance/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumao.eu/ecommerce/cms/magento/maintenance/</guid>
+      <description>Une plateforme open source telle que Magento demande à être entretenue avec soin pour rester efficace sur la durée. En effet, parce que tout va très vite dans le web, votre site e-commerce doit être à jour, fonctionnel et exempt de toutes failles de sécurité. Le risque principal : un site qui ne s’affiche plus pendant des heures, voire des jours… Pour assurer la pérennité de votre boutique en ligne, un contrat Magento maintenance est conseillé.</description>
+    </item>
+    
+    <item>
+      <title>Magento B2B Marketplace &amp; Fonctionnalités pour les Pros</title>
+      <link>https://lumao.eu/ecommerce/cms/magento/b2b-marketplace/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumao.eu/ecommerce/cms/magento/b2b-marketplace/</guid>
+      <description>Si Magento s’est imposé dans le domaine des sites e-commerce B2C mono-vendeur, la plateforme permet désormais de créer des places de marché. L’extension Magento B2B Marketplace fait partie des solutions plébiscitées pour transformer un site de vente en ligne en place de marché destinée aux professionnels. Découvrez les fonctionnalités de cet outil ainsi que des informations sur les marketplaces et leur business model. Et si vous souhaitez être accompagné dans la mise en place de ce module sur votre site Magento, demandez-nous un devis personnalisé.</description>
+    </item>
+    
+    <item>
+      <title>Magento Connect : des Modules d’Extension pour votre Site</title>
+      <link>https://lumao.eu/ecommerce/cms/magento/connect/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumao.eu/ecommerce/cms/magento/connect/</guid>
+      <description>Pour personnaliser un site e-commerce développé sur un CMS tel que Magento, il est nécessaire de télécharger et d’installer des extensions compatibles. Ces modules sont disponibles sur Marketplace Magento, une boutique anciennement connue sous le nom de Magento Connect. Des centaines de modules et de thèmes, gratuits ou payants, sont proposés. Ils permettent d’apporter de nouvelles fonctionnalités à votre site de vente en ligne et de le rendre plus performant et pus pratique.</description>
+    </item>
+    
+    <item>
+      <title>Magento Download | Installation de la Solution sur votre Serveur</title>
+      <link>https://lumao.eu/ecommerce/cms/magento/telecharger/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumao.eu/ecommerce/cms/magento/telecharger/</guid>
+      <description>Pour utiliser la plateforme Magento et l’ensemble des fonctionnalités e-commerce disponibles, il est nécessaire dans un premier temps de télécharger la solution et de l’installer. Avec Magento download, en un clic, vous obtenez les fichiers systèmes compressés, qu’il vous faudra ensuite déposer sur un FTP pour les installer sur votre serveur. Vous voulez en savoir plus ? Nous vous expliquons les étapes essentielles à l’installation de Magento. Et si vous souhaitez que des spécialistes du CMS se chargent de A à Z de la conception de votre site de vente en ligne, contactez Lumao pour recevoir un devis personnalisé.</description>
+    </item>
+    
+    <item>
+      <title>Magento Marketplace, des Extensions E-Commerce par Milliers</title>
+      <link>https://lumao.eu/ecommerce/cms/magento/marketplace/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumao.eu/ecommerce/cms/magento/marketplace/</guid>
+      <description>Un site de vente en ligne offre de multiples fonctionnalités spécifiques, utiles à la fois côté internautes et côté e-commerçant : le paiement en ligne, la mise au panier, l’historique des commandes, etc. Avec la plateforme Magento, vous avez accès à nombre de ces outils très pratiques qui vous permettent de faire fonctionner votre boutique en ligne. Pour que celle-ci gagne en performance et anticipe les attentes de vos clients, vous aurez rapidement besoin de nouvelles fonctionnalités.</description>
+    </item>
+    
+  </channel>
+</rss>
