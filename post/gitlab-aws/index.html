@@ -12,7 +12,7 @@
 	<link rel="canonical" href="https://lumao.eu/post/gitlab-aws/">
 	<link rel="alternate" hreflang="en" href="https://en.lumao.eu/post/gitlab-aws/"/>
 	
-	<meta name="generator" content="Hugo 0.46" />
+	<meta name="generator" content="Hugo 0.52-DEV" />
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575799-1"></script>
 	<script>
@@ -158,7 +158,7 @@ Vous avez maintenant vos clés d&rsquo;accès.
 <li>Password : <strong>PB8OZq5k6aHjXfaaEs+ifr38GzIMFvuBj2k+7t4y</strong></li>
 </ul>
 
-<p>Il ne faut pas partager ces clés, elles sont très importante. Je les ais bien sur désactivés avant de mettre en ligne ce tuto ;)</p>
+<p>Il ne faut pas partager ces clés, elles sont très importantes. Je les ai bien sûr désactivées avant de mettre en ligne ce tuto ;)</p>
 
 <p><h3 class="post-title">Récapitulatif Amazon</h3>
 On a maintenant un environnement élastique, qui déploie un fichier zip quand on lui demande (via un clic sur un bouton ou via l&rsquo;API).
@@ -170,10 +170,10 @@ Je vais essayer de résumer quelques fonctions de Gitlab pour le CD.
 Une &ldquo;grosse&rdquo; partie de l&rsquo;interface la gestion de cluster Kubernetes, ça ne sera pas pour aujourd&rsquo;hui.</p>
 
 <p><h3 class="post-title">Concept généraux</h3>
-Une <strong>pipeline</strong> est un groupe de <strong>job</strong> exécutées par <strong>stage</strong> (étapes).
+Une <strong>pipeline</strong> est un groupe de <strong>jobs</strong> exécutés par <strong>stage</strong> (étapes).
 Toutes les tâches d&rsquo;une étape sont exécutées en parallèle (si possible),
 et si elles réussissent toutes, le pipeline passe à l&rsquo;étape suivante.
-Si l&rsquo;un des <strong>job</strong> échoue, l&rsquo;étape suivante n&rsquo;est (habituellement) pas exécutée.</p>
+Si l&rsquo;un des <strong>jobs</strong> échoue, l&rsquo;étape suivante n&rsquo;est (habituellement) pas exécutée.</p>
 
 <p><h3 class="post-title">Pipelines</h3>
 Voici ce qu&rsquo;on va faire :
@@ -256,8 +256,8 @@ on télécharge le .phar de composer et on le lance.</p>
 <p>La seconde étape (deploy) consiste à zipper les sources, copier le fichier sur S3 et enfin refaire notre environnement Beanstalk.
 Pour ça, on utilise l&rsquo;image docker <strong>lavoweb/aws-cli</strong>.</p>
 
-<p>Comme vous le voyez, on utilise pas la même image, vous vous doûtez bien qu&rsquo;il ne vas pas garder les fichiers.
-Dans la CI, on peut jouer une analyse de code, puis lancer les tests unitaire et enfin lancer le déploiement.
+<p>Comme vous le voyez, on n&rsquo;utilise pas la même image, vous vous doûtez bien qu&rsquo;il ne va pas garder les fichiers.
+Dans la CI, on peut jouer une analyse de code, puis lancer les tests unitaires et enfin lancer le déploiement.
 Il faut activer une option pour garder les fichiers, c&rsquo;est l&rsquo;instruction <strong>cache</strong>.</p>
 
 <p>Vous avez sûrement remarqué qu&rsquo;il y a quelques variables dans le script.</p>
@@ -266,7 +266,7 @@ Il faut activer une option pour garder les fichiers, c&rsquo;est l&rsquo;instruc
 
 <p>Pour éviter ça, Gitlab dispose d&rsquo;une gestion des secrets. C&rsquo;est dans <strong>Settings</strong> =&gt; <strong>CI / DI</strong> =&gt; <strong>Secret variables</strong>.
 <img src="/images/9/gse-1.png" alt="CI settings" />
-Vous pouvez avoir des configuration différentes par envirronement.</p>
+Vous pouvez avoir des configurations différentes par environnement.</p>
 
 <p>Et le mieux ? C&rsquo;est que ça marche avec plein de techno, ce site est déployé via Travis CI + Hugo.</p>
 

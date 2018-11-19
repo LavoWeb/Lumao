@@ -12,7 +12,7 @@
 	<link rel="canonical" href="https://lumao.eu/post/docker-compose-auto-reverse-proxy/">
 	<link rel="alternate" hreflang="en" href="https://en.lumao.eu/post/docker-compose-auto-reverse-proxy/"/>
 	
-	<meta name="generator" content="Hugo 0.46" />
+	<meta name="generator" content="Hugo 0.52-DEV" />
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575799-1"></script>
 	<script>
@@ -86,7 +86,7 @@ génère un certificat SSL SAN pour les noms associés sans aucune action de not
 
 <h3 id="acme">Acme</h3>
 
-<p>C&rsquo;est le doux nom pour <a href="https://letsencrypt.org/">Let’s Encrypt</a>, vous aurez la liste de vos domaines ainsi que les clés associés dans le fichier json.</p>
+<p>C&rsquo;est le doux nom pour <a href="https://letsencrypt.org/">Let’s Encrypt</a>, vous aurez la liste de vos domaines ainsi que les clés associées dans le fichier json.</p>
 
 <h3 id="compose">Compose</h3>
 
@@ -196,7 +196,7 @@ Træfɪk route le trafic sur le port <em>80</em>.</p>
 Træfɪk utilise le backend <em>soinsnaturels</em>, on prendra soin d&rsquo;avoir un backend unique pour chaque site.</p>
 
 <p><em>traefik.frontend.rule=Host:soins-naturels.net,www.soins-naturels.net,dev.soins-naturels.net</em>
-On déclare les noms de domaines qu&rsquo;on utilisera. Un certificat SSL SAN sera généré content tous ces domaines.</p>
+On déclare les noms de domaines qu&rsquo;on utilisera. Un certificat SSL SAN sera généré contenant tous ces domaines.</p>
 
 <p><em>traefik.docker.network=web</em>
 Træfɪk utilise le network <em>web</em> pour communiquer avec ce container.</p>

@@ -12,7 +12,7 @@
 	<link rel="canonical" href="https://lumao.eu/post/">
 	<link rel="alternate" hreflang="en" href="https://en.lumao.eu/post/"/>
 	<link href="https://lumao.eu/post/index.xml" rel="feed" type="application/rss+xml" title="Développement Magento">
-	<meta name="generator" content="Hugo 0.46" />
+	<meta name="generator" content="Hugo 0.52-DEV" />
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575799-1"></script>
 	<script>
@@ -59,7 +59,7 @@
 		
 		<div>
 			Un article très court aujourd&rsquo;hui pour monter un VPN sur un serveur avec docker-compose en quelques minutes.
-Serveur OpenVPN Très simple, on crée un répertoire openvpn et on mets le fichier docker-compose.yml :
+Serveur OpenVPN Très simple, on crée un répertoire openvpn et on met le fichier docker-compose.yml :
 openvpn: image: 'kylemanna/openvpn' volumes: - './data:/etc/openvpn' ports: - &quot;1194:1194/udp&quot; cap_add: - NET_ADMIN restart: always  On fait la configuration :
 docker run --name openvpn_openvpn_1 -v /etc/openvpn busybox docker run --volumes-from openvpn_openvpn_1 --rm kylemanna/openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM docker run --volumes-from openvpn_openvpn_1 --rm -it kylemanna/openvpn ovpn_initpki  On crée un utilisateur :
 			
@@ -151,8 +151,8 @@ Il y a 3 étapes :
  Changer les DNS
  Valider les e-mails
  Installer/Configurer une extension Magento
-  Amazon Pour une fois, on ne peut pas utiliser le service depuis beaucoup de zones, en europe ce sera l&rsquo;Irlande (eu-west-1 pour les intimes).
-Ajouter un domaine Il faut d&rsquo;abord authoriser le domaine à envoyer les mails, ça se passe depuis la console.
+  Amazon Pour une fois, on ne peut pas utiliser le service depuis beaucoup de zones, en Europe ce sera l&rsquo;Irlande (eu-west-1 pour les intimes).
+Ajouter un domaine Il faut d&rsquo;abord autoriser le domaine à envoyer les mails, ça se passe depuis la console.
 			
 				<a href="https://lumao.eu/post/magento-ses/">Lire la suite...</a>
 			
@@ -189,8 +189,8 @@ Alternatives à Gitlab Tout d&rsquo;abord quelques alternatives à Gitlab CI, il
 		
 		<div>
 			Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
-Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fournit comme un service, contrairement aux autres, ce n&rsquo;est pas une contrainte de l&rsquo;utiliser.
-Création d&rsquo;APIs   Laravel permets de créer une API en quelques clics, c&rsquo;est adapté pour faire un prototype pour des startups.
+Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fourni comme un service, contrairement aux autres, ce n&rsquo;est pas une contrainte de l&rsquo;utiliser.
+Création d&rsquo;APIs   Laravel permet de créer une API en quelques clics, c&rsquo;est adapté pour faire un prototype pour des startups.
 			
 				<a href="https://lumao.eu/post/developpement-laravel/">Lire la suite...</a>
 			

@@ -12,7 +12,7 @@
 	<link rel="canonical" href="https://lumao.eu/post/openvpn-docker/">
 	<link rel="alternate" hreflang="en" href="https://en.lumao.eu/post/openvpn-docker/"/>
 	
-	<meta name="generator" content="Hugo 0.46" />
+	<meta name="generator" content="Hugo 0.52-DEV" />
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575799-1"></script>
 	<script>
@@ -63,7 +63,7 @@
 
 <h2 id="serveur-openvpn">Serveur OpenVPN</h2>
 
-<p>Très simple, on crée un répertoire <em>openvpn</em> et on mets le fichier <em>docker-compose.yml</em> :</p>
+<p>Très simple, on crée un répertoire <em>openvpn</em> et on met le fichier <em>docker-compose.yml</em> :</p>
 
 <pre><code>openvpn:
   image: 'kylemanna/openvpn'
@@ -89,11 +89,11 @@ docker run --volumes-from openvpn_openvpn_1 --rm -it kylemanna/openvpn ovpn_init
 docker run --volumes-from openvpn_openvpn_1 --rm kylemanna/openvpn ovpn_getclient client-bureau &gt; client-bureau.ovpn
 </code></pre>
 
-<p>On télécharge cette clée sur notre client</p>
+<p>On télécharge cette clé sur notre client</p>
 
 <h2 id="client-openvpn">Client OpenVPN</h2>
 
-<p>On va intégrer le VPN dans les paramètres de réseau pour pouvoir l&rsquo;activer/désactivé facilement.</p>
+<p>On va intégrer le VPN dans les paramètres de réseau pour pouvoir l&rsquo;activer/désactiver facilement.</p>
 
 <pre><code>sudo apt-get install network-manager-openvpn network-manager-openvpn-gnome
 </code></pre>
@@ -102,7 +102,7 @@ docker run --volumes-from openvpn_openvpn_1 --rm kylemanna/openvpn ovpn_getclien
 
 <p><img src="/images/14/1-ajouter-vpn.png" alt="Ajouter un VPN gnome" /></p>
 
-<p>On choisi l&rsquo;import, on mets le fichier précédemment téléchargé.</p>
+<p>On choisit l&rsquo;import, on mets le fichier précédemment téléchargé.</p>
 
 <p><img src="/images/14/2-modifier-information.png" alt="Modifier les informations du VPN gnome" /></p>
 

@@ -219,7 +219,7 @@ Qu’est-ce qu’une refonte de site web ? Il s’agit d’une prestation partic
       
       <guid>https://lumao.eu/post/openvpn-docker/</guid>
       <description>Un article très court aujourd&amp;rsquo;hui pour monter un VPN sur un serveur avec docker-compose en quelques minutes.
-Serveur OpenVPN Très simple, on crée un répertoire openvpn et on mets le fichier docker-compose.yml :
+Serveur OpenVPN Très simple, on crée un répertoire openvpn et on met le fichier docker-compose.yml :
 openvpn: image: &#39;kylemanna/openvpn&#39; volumes: - &#39;./data:/etc/openvpn&#39; ports: - &amp;quot;1194:1194/udp&amp;quot; cap_add: - NET_ADMIN restart: always  On fait la configuration :
 docker run --name openvpn_openvpn_1 -v /etc/openvpn busybox docker run --volumes-from openvpn_openvpn_1 --rm kylemanna/openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM docker run --volumes-from openvpn_openvpn_1 --rm -it kylemanna/openvpn ovpn_initpki  On crée un utilisateur :</description>
     </item>
@@ -356,8 +356,8 @@ Il y a 3 étapes :
  Changer les DNS
  Valider les e-mails
  Installer/Configurer une extension Magento
-  Amazon Pour une fois, on ne peut pas utiliser le service depuis beaucoup de zones, en europe ce sera l&amp;rsquo;Irlande (eu-west-1 pour les intimes).
-Ajouter un domaine Il faut d&amp;rsquo;abord authoriser le domaine à envoyer les mails, ça se passe depuis la console.</description>
+  Amazon Pour une fois, on ne peut pas utiliser le service depuis beaucoup de zones, en Europe ce sera l&amp;rsquo;Irlande (eu-west-1 pour les intimes).
+Ajouter un domaine Il faut d&amp;rsquo;abord autoriser le domaine à envoyer les mails, ça se passe depuis la console.</description>
     </item>
     
     <item>
@@ -396,8 +396,8 @@ Alternatives à Gitlab Tout d&amp;rsquo;abord quelques alternatives à Gitlab CI
       
       <guid>https://lumao.eu/post/developpement-laravel/</guid>
       <description>Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
-Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fournit comme un service, contrairement aux autres, ce n&amp;rsquo;est pas une contrainte de l&amp;rsquo;utiliser.
-Création d&amp;rsquo;APIs   Laravel permets de créer une API en quelques clics, c&amp;rsquo;est adapté pour faire un prototype pour des startups.</description>
+Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fourni comme un service, contrairement aux autres, ce n&amp;rsquo;est pas une contrainte de l&amp;rsquo;utiliser.
+Création d&amp;rsquo;APIs   Laravel permet de créer une API en quelques clics, c&amp;rsquo;est adapté pour faire un prototype pour des startups.</description>
     </item>
     
     <item>
@@ -454,7 +454,7 @@ Structure . |-- acme | `-- acme.json |-- compose | `-- soins-naturels.net | |-- 
       <description>Aller sur Gitlab.com
 Créer un repo privé
 Editer le projet :
-Vérifier que l&amp;rsquo;option &amp;ldquo;Container Registry&amp;rdquo; est activé puis sauvegarder le projet.
+Vérifier que l&amp;rsquo;option &amp;ldquo;Container Registry&amp;rdquo; est activée puis sauvegarder le projet.
 Voici la configuration que je recommande :
 On a donc un repo privé, où on peut mettre notre Dockerfile ainsi que notre configuration spécifique, un README qui explique comment récupèrer un tag spécifique ainsi que notre registry Docker
 Vous devriez avoir un nouvel onglet dans le projet :</description>
@@ -469,7 +469,7 @@ Vous devriez avoir un nouvel onglet dans le projet :</description>
       <description>Introduction
 Hugo Hugo est un générateur de site statique, il est rapide, compatible toute plateforme et est très simple à prendre en main. Il est fourni avec un serveur intégré et l&amp;rsquo;extension live-reload, vous pouvez donc écrire un article en MarkDown et voir directement le résultat sans rafraîchir la page.
 Faire des sites statiques permets de réduire les coûts d&amp;rsquo;hébergements et d&amp;rsquo;enlever le risque de failles applicatives.
-GitHub Pages GitHub permets d&amp;rsquo;héberger gratuitement (en cas pas projet open-source) des documentations ou encore un site web.</description>
+GitHub Pages GitHub permet d&amp;rsquo;héberger gratuitement (en cas pas projet open-source) des documentations ou encore un site web.</description>
     </item>
     
     <item>
