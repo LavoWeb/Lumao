@@ -54,6 +54,20 @@
 		
 		
 			<div class="section-about">	<article>
+		<h1><a href="https://lumao.eu/post/docker-sync/">Docker Sync</a></h1>
+		<time>26.11.2018 00:00</time>
+		
+		<div>
+			 Eviter facilement les problèmes de synchronisation de fichiers sur Windows/Mac.
+Docker Sync http://docker-sync.io/
+docker-sync.yml
+version: '2' options: compose-dev-file-path: 'docker-compose.yml' verbose: true syncs: poc-magento2-sync: src: ./ sync_userid: '33' sync_excludes: [ '.idea', '.buildpath', '.project', '.settings', '.DS_Store', '.gitlab-ci.yml', 'generated', 'setup', 'vendor', 'var' ] watch_excludes: [ '.idea', '.buildpath', '.project', '.settings', '.DS_Store', '.gitlab-ci.yml', 'generated', 'setup', 'vendor', 'var' ]  docker-sync start  docker-compose.yml
+version: &quot;2&quot; services: php: image: lavoweb/php-7.0:xdebug expose: - 80 volumes: - app_sync:/var/www/html volumes: app_sync: external: name: poc-magento2-sync  docker-compose up -d  
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
 		<h1><a href="https://lumao.eu/post/openvpn-docker/">Configurer OpenVPN avec Docker</a></h1>
 		<time>22.06.2018 00:00</time>
 		
@@ -183,23 +197,9 @@ Alternatives à Gitlab Tout d&rsquo;abord quelques alternatives à Gitlab CI, il
 		</div>
 	</article></div>
 		
-			<div class="section-about">	<article>
-		<h1><a href="https://lumao.eu/post/developpement-laravel/">Développement Laravel</a></h1>
-		<time>09.04.2017 16:11</time>
-		
-		<div>
-			Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
-Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fourni comme un service, contrairement aux autres, ce n&rsquo;est pas une contrainte de l&rsquo;utiliser.
-Création d&rsquo;APIs   Laravel permet de créer une API en quelques clics, c&rsquo;est adapté pour faire un prototype pour des startups.
-			
-				<a href="https://lumao.eu/post/developpement-laravel/">Lire la suite...</a>
-			
-		</div>
-	</article></div>
-		
 		<div>
 
-1 sur 2
+1 sur 3
 
 	<a href="/post/page/2/">Page suivante</a>
 
@@ -213,6 +213,8 @@ Création d&rsquo;APIs   Laravel permet de créer une API en quelques clics, c&r
 			<div>
 				<ul>
 					
+					<li><a href="https://lumao.eu/post/docker-sync/">Docker Sync</a></li>
+					
 					<li><a href="https://lumao.eu/reference/32-bx/">Boxspring</a></li>
 					
 					<li><a href="https://lumao.eu/reference/30-bvt/">Brun de Vian-Tiran</a></li>
@@ -220,8 +222,6 @@ Création d&rsquo;APIs   Laravel permet de créer une API en quelques clics, c&r
 					<li><a href="https://lumao.eu/reference/31-pds/">Les Passionnés du Vin</a></li>
 					
 					<li><a href="https://lumao.eu/ecommerce/creation/dropshipping/">Créer une Boutique en Ligne Sans Stock | Dropshipping</a></li>
-					
-					<li><a href="https://lumao.eu/ecommerce/creation/boutique/">Créer une Boutique en Ligne et Vendre ses Produits sur Internet</a></li>
 					
 				</ul>
 			</div>

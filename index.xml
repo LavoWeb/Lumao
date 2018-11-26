@@ -6,10 +6,23 @@
     <description>Recent content on Développement Magento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Mon, 12 Nov 2018 12:50:52 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 26 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lumao.eu/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker Sync</title>
+      <link>https://lumao.eu/post/docker-sync/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumao.eu/post/docker-sync/</guid>
+      <description> Eviter facilement les problèmes de synchronisation de fichiers sur Windows/Mac.
+Docker Sync http://docker-sync.io/
+docker-sync.yml
+version: &#39;2&#39; options: compose-dev-file-path: &#39;docker-compose.yml&#39; verbose: true syncs: poc-magento2-sync: src: ./ sync_userid: &#39;33&#39; sync_excludes: [ &#39;.idea&#39;, &#39;.buildpath&#39;, &#39;.project&#39;, &#39;.settings&#39;, &#39;.DS_Store&#39;, &#39;.gitlab-ci.yml&#39;, &#39;generated&#39;, &#39;setup&#39;, &#39;vendor&#39;, &#39;var&#39; ] watch_excludes: [ &#39;.idea&#39;, &#39;.buildpath&#39;, &#39;.project&#39;, &#39;.settings&#39;, &#39;.DS_Store&#39;, &#39;.gitlab-ci.yml&#39;, &#39;generated&#39;, &#39;setup&#39;, &#39;vendor&#39;, &#39;var&#39; ]  docker-sync start  docker-compose.yml
+version: &amp;quot;2&amp;quot; services: php: image: lavoweb/php-7.0:xdebug expose: - 80 volumes: - app_sync:/var/www/html volumes: app_sync: external: name: poc-magento2-sync  docker-compose up -d  </description>
+    </item>
     
     <item>
       <title>Boxspring</title>
@@ -398,6 +411,33 @@ Alternatives à Gitlab Tout d&amp;rsquo;abord quelques alternatives à Gitlab CI
       <description>Laravel est un framework PHP très tendance dans le monde du développement. Il a été créé par Taylor Otwell en juin 2011.
 Il a tout de suite été adopté par de nombreux développeurs (nous les premiers) car il est très simple à prendre en main, il est fourni comme un service, contrairement aux autres, ce n&amp;rsquo;est pas une contrainte de l&amp;rsquo;utiliser.
 Création d&amp;rsquo;APIs   Laravel permet de créer une API en quelques clics, c&amp;rsquo;est adapté pour faire un prototype pour des startups.</description>
+    </item>
+    
+    <item>
+      <title>Recrutement freelance apporteur d&#39;affaire</title>
+      <link>https://lumao.eu/post/job-magento/</link>
+      <pubDate>Sun, 09 Apr 2017 16:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/job-magento/</guid>
+      <description>Bonjour,
+On recherche un business developer/apporteur d&amp;rsquo;affaire capable d&amp;rsquo;apporter des projets e-commerce de grande envergure : 25-200k.
+On propose une rémunération à la commission. C&amp;rsquo;est possible de faire de la marque blanche.</description>
+    </item>
+    
+    <item>
+      <title>Recrutement secrétaire freelance</title>
+      <link>https://lumao.eu/post/job-secretaire/</link>
+      <pubDate>Sun, 09 Apr 2017 16:11:14 +0100</pubDate>
+      
+      <guid>https://lumao.eu/post/job-secretaire/</guid>
+      <description>Toujours en recherche
+Bonjour,
+On recherche un secrétaire freelance sur Annecy pour gérer les &amp;ldquo;papiers&amp;rdquo; de l&amp;rsquo;entreprise.
+ Récupérer les factures sur différents sites
+ Classer les factures suivant l&amp;rsquo;ordre d&amp;rsquo;apparition sur les comptes
+ Gérer les notes de frais/indemnité kilométrique
+ Vérifier la TVA sur l&amp;rsquo;outil comptable et potentiellement &amp;ldquo;ventiler&amp;rdquo; les dépenses
+  Il faudrait venir sur place une fois par mois pour faire le tri.</description>
     </item>
     
     <item>

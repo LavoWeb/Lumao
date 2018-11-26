@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Recrutement freelance apporteur d&#39;affaire</title>
-	<meta name="description" content="Vous avez des contacts avec des projets Magento ? On a de la capacité"/>
+	<title>Docker Sync</title>
+	<meta name="description" content=""/>
 	
 	
 	<link rel="shortcut icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="https://lumao.eu/favicon.ico" type="image/x-icon">
-	<link rel="canonical" href="https://lumao.eu/post/job-magento/">
-	<link rel="alternate" hreflang="en" href="https://en.lumao.eu/post/job-magento/"/>
+	<link rel="canonical" href="https://lumao.eu/post/docker-sync/">
+	<link rel="alternate" hreflang="en" href="https://en.lumao.eu/post/docker-sync/"/>
 	
 	<meta name="generator" content="Hugo 0.52-DEV" />
 	
@@ -52,17 +52,78 @@
 
 	<div class="section section-content" id="section-content">
 		<div class="title-block">
-			<h1 class="title-big">Recrutement freelance apporteur d&#39;affaire</h1>
+			<h1 class="title-big">Docker Sync</h1>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 about-info">
-					<p>Bonjour,</p>
+					
 
-<p>On recherche un business developer/apporteur d&rsquo;affaire capable d&rsquo;apporter des projets e-commerce
-de grande envergure : 25-200k.</p>
+<p>Eviter facilement les problèmes de synchronisation de fichiers sur Windows/Mac.</p>
 
-<p>On propose une rémunération à la commission. C&rsquo;est possible de faire de la marque blanche.</p>
+<h2 id="docker-sync">Docker Sync</h2>
+
+<p><a href="http://docker-sync.io/">http://docker-sync.io/</a></p>
+
+<p><strong>docker-sync.yml</strong></p>
+
+<pre><code>version: '2'
+options:
+  compose-dev-file-path: 'docker-compose.yml'
+  verbose: true
+syncs:
+  poc-magento2-sync:
+    src: ./
+    sync_userid: '33'
+    sync_excludes: [
+      '.idea',
+      '.buildpath',
+      '.project',
+      '.settings',
+      '.DS_Store',
+      '.gitlab-ci.yml',
+      'generated',
+      'setup',
+      'vendor',
+      'var'
+    ]
+    watch_excludes: [
+      '.idea',
+      '.buildpath',
+      '.project',
+      '.settings',
+      '.DS_Store',
+      '.gitlab-ci.yml',
+      'generated',
+      'setup',
+      'vendor',
+      'var'
+    ]
+</code></pre>
+
+<pre><code>docker-sync start
+</code></pre>
+
+<p><strong>docker-compose.yml</strong></p>
+
+<pre><code>version: &quot;2&quot;
+services:
+  php:
+    image: lavoweb/php-7.0:xdebug
+    expose:
+    - 80
+    volumes:
+    - app_sync:/var/www/html
+
+volumes:
+  app_sync:
+    external:
+      name: poc-magento2-sync
+
+</code></pre>
+
+<pre><code>docker-compose up -d
+</code></pre>
 
 				</div>
 			</div>
