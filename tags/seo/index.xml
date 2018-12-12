@@ -40,6 +40,15 @@
     
     <item>
       <title>NutriLife</title>
+      <link>https://lumao.eu/freference/25-nutri/</link>
+      <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
+      
+      <guid>https://lumao.eu/freference/25-nutri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NutriLife</title>
       <link>https://lumao.eu/reference/25-nutri/</link>
       <pubDate>Sat, 24 Mar 2018 12:50:52 +0100</pubDate>
       
@@ -53,7 +62,10 @@
       <pubDate>Sat, 24 Dec 2016 12:50:52 +0100</pubDate>
       
       <guid>https://lumao.eu/reference/02-capelstore/</guid>
-      <description></description>
+      <description>Capel Paris est une entreprise qui vend des vétements grande tailles. L&amp;rsquo;entreprise dispose d&amp;rsquo;une dizaine de magasins dans plusieurs grandes villes.
+Le site est assez vieux, il date de 2006. Il est sous Magento 1. Nous avons repris le compte à une prestigieuse agence Magento parisienne.
+On s&amp;rsquo;occupe de la TMA évolutive depuis 2017.
+Voici quelques tâches qu&amp;rsquo;on a réalisé : - Création du responsive - Mise à jour Magento - Mise à jour PHP - Création d&amp;rsquo;un blog - Guide des tailles avec calculette - Catalogue web - Abcédaire du vetement - Liste des marques - Filtres performant pour selectionner des tailles - Performance du site - Création des règles promos - Pastilles de promotion</description>
     </item>
     
     <item>

@@ -133,12 +133,22 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/freference/28-lit/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/reference/28-lit/</loc>
     <lastmod>2018-03-24T12:50:52+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://lumao.eu/reference/23-mdp/</loc>
+    <lastmod>2018-03-24T12:50:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/freference/25-nutri/</loc>
     <lastmod>2018-03-24T12:50:52+01:00</lastmod>
   </url>
   
@@ -398,12 +408,11 @@
   </url>
   
   <url>
-    <loc>https://lumao.eu/categories/</loc>
-    <priority>0</priority>
+    <loc>https://lumao.eu/ecommerce/cms/</loc>
   </url>
   
   <url>
-    <loc>https://lumao.eu/ecommerce/cms/</loc>
+    <loc>https://lumao.eu/categories/</loc>
     <priority>0</priority>
   </url>
   
@@ -430,7 +439,6 @@
   
   <url>
     <loc>https://lumao.eu/ecommerce/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -453,7 +461,6 @@
   <url>
     <loc>https://lumao.eu/ecommerce/cms/magento/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
