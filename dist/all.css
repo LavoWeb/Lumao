@@ -8887,7 +8887,7 @@ html {
 
 /* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
+  padding-left: 20px;
 }
 
 /* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
@@ -9571,6 +9571,7 @@ div.fb-page.fb_iframe_widget {
     color: #162532;
     margin-bottom: 25px;
     margin-top: 12px;
+    text-align: center;
 }
 .title-middle:after {
     content: "";

@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/erp/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/expert/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/solution-partner/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/crm/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/pim/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/optimisation/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/post/docker-sync/</loc>
     <lastmod>2018-11-26T00:00:00+00:00</lastmod>
   </url>
@@ -23,12 +53,27 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/agence-ecom/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/agence-web/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/ecommerce/creation/dropshipping/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://lumao.eu/ecommerce/creation/boutique/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/design-ux/fiche-produit/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -412,6 +457,11 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/ecommerce/cms/magento/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/categories/</loc>
     <priority>0</priority>
   </url>
@@ -422,8 +472,17 @@
   </url>
   
   <url>
+    <loc>https://lumao.eu/ecommerce/connexion-si/</loc>
+  </url>
+  
+  <url>
     <loc>https://lumao.eu/site/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lumao.eu/ecommerce/design-ux/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -434,7 +493,7 @@
   
   <url>
     <loc>https://lumao.eu/</loc>
-    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -455,11 +514,6 @@
   
   <url>
     <loc>https://lumao.eu/ecommerce/tunnel-de-vente/livraison/</loc>
-    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lumao.eu/ecommerce/cms/magento/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
   
